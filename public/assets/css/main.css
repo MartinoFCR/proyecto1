@@ -1,0 +1,52 @@
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .header {
+        background-color: #007bff; /* Azul */
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+    }
+    .menu {
+        background-color: #cceeff; /* Azul más claro */
+        padding: 20px;
+    }
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .menu ul li {
+        margin-bottom: 10px;
+        cursor: pointer; /* Cambiamos el cursor a pointer para indicar que es clickable */
+    }
+    .menu ul li:hover {
+        background-color: #a9d5f3; /* Cambiamos el color de fondo al pasar el cursor */
+    }
+    .submenu {
+        display: none; /* Ocultamos el submenú por defecto */
+        padding-left: 20px; /* Añadimos un poco de espacio a la izquierda para indentar */
+    }
+    .submenu ul {
+        list-style-type: none;
+        padding: 0;
+        background-color: #cceeff; /* Mismo color que el menú principal */
+    }
+    .submenu ul li {
+        margin-bottom: 5px;
+    }
+    .footer {
+        background-color: #f0f0f0; /* Gris claro */
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }

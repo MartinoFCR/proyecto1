@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.header {
+    background-color: #007bff; /* Azul */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.menu {
+    background-color: #cceeff; /* Azul más claro */
+    padding: 20px;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu ul li {
+    margin-bottom: 10px;
+    cursor: pointer; /* Cambiamos el cursor a pointer para indicar que es clickable */
+}
+.menu ul li:hover {
+    background-color: #a9d5f3; /* Cambiamos el color de fondo al pasar el cursor */
+}
+.submenu {
+    display: none; /* Ocultamos el submenú por defecto */
+    padding-left: 20px; /* Añadimos un poco de espacio a la izquierda para indentar */
+}
+.submenu ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #cceeff; /* Mismo color que el menú principal */
+}
+.submenu ul li {
+    margin-bottom: 5px;
+}
+.footer {
+    background-color: #f0f0f0; /* Gris claro */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.login-form {
+    width: 60%;
+    padding: 20px;
+}
+.login-image {
+    width: 40%;
+    padding: 20px;
+}
+.login-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.recovery-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.recovery-container h2 {
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.form-group input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+}
