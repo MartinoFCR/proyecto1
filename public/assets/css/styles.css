@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     height: 100vh;
 }
+
 .header {
     background-color: #007bff; /* Azul */
     color: #fff;
