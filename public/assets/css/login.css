@@ -75,7 +75,8 @@ body {
 
 
 }
-.layout__login{
+.layout__login,
+.layout__forget-password{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,18 +84,21 @@ body {
 
     border-right: 0.5rem solid var(--color-secundario);
 }
-.login__form-box{
+.login__form-box,
+.forget-password__form-box{
     display: flex;
     flex-direction: column;
     min-width: 45rem;
     min-height: 50rem;
 }
-.login__form-header{
+.login__form-header,
+.forget-password__form-header{
     margin-bottom: 4rem;
     display: inline-block;
     text-align: center;
 }
-.login__title{
+.login__title,
+.forget-password__title{
     font-size: 3.2rem;
     position: relative;
 }
@@ -171,12 +175,14 @@ body {
     background-color: var(--color-secundario);
     color: var(--color-principal);
 }
-.login__line{
+.login__line,
+.forget-password__line{
     margin: 1rem;
     margin-top: 2.5rem;
     border: 0.1rem solid var(--color-secundario);
 }
-.login__forget-password{
+.login__forget-password,
+.forget-password__login{
     margin: 1rem;
     text-align: center;
     text-decoration: none;

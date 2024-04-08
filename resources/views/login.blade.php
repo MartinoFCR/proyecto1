@@ -15,7 +15,10 @@
                     <h1 class="login__title">INICIO DE SESIÓN</h1>
                 </header>
 
-                <form method="" class="login__user-info">
+                <form method="post" class="login__user-info" action="{{ route('procesar-formulario') }}">
+
+                    @csrf <!-- Esto es equivalente a <input type="hidden" name="_token" value="<?/*php echo $token; */?>">-->
+                    
                     <div class="form__container">
                         <div class="form__group">
                             <input type="username" class="form__input" name="username" placeholder="Usuario"
@@ -35,7 +38,7 @@
 
                 <div class="login__line"></div>
                 
-                <a href="/" class="login__forget-password">Recuperar Contraseña</a>
+                <a href="/forget_password" class="login__forget-password">Recuperar Contraseña</a>
             </div>
         </div>
 
