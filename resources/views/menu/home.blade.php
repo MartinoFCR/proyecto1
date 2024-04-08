@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menú con Submenú</title>
+<title>Home</title>
+<link rel="stylesheet" href="{{ asset('assets/css/reset.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/styles.css') }}">
 <!--<script src="https://cdn.tailwindcss.com"></script>-->
 </head>
 <body>
 
-<div class="header">
-    <h1>Nombre de la Empresa</h1>
-</div>
-<div class="container">
-    <div class="menu">
+
+<div class="layout">
+
+    <div class="layout__left">
         <ul>
             <li onclick="toggleSubMenu('submenu1')">Administración</li>
             <div class="submenu" id="submenu1">
@@ -43,11 +43,20 @@
             </div>
         </ul>
     </div>
-    <div class="center-content">
-        <!-- Contenido central -->
-    </div>
-    <div class="right-content">
-        <!-- Contenido derecho -->
+
+    <div class="layout__right">
+        <div class="layout__header">
+            <h1>ESTAMPADOS PERSONALIZADOS</h1>
+        </div>
+        
+        <div>
+            <div class="center-content">
+                <!-- Contenido central -->
+            </div>
+            <div class="right-content">
+                <!-- Contenido derecho -->
+            </div>
+        </div>
     </div>
 </div>
 <div class="footer">

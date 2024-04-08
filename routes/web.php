@@ -10,4 +10,4 @@ Route::get('/forget_password',  [LoginController::class, 'forget_password']);
 Route::get('/home',            [HomeController::class, 'index']);
 
 // routes/web.php
-Route::post('/procesar-formulario', [FormController::class, 'procesar_login']);
+Route::post('/procesar-formulario', [FormController::class, 'procesar_login'])->name('procesar-formulario');
