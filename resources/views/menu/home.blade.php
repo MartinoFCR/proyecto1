@@ -22,11 +22,11 @@
         <div class="left__container">
             <ul class="list__content">
                 <li>
-                    <a href="">
+                    
                     <div class="left__search-bar">
                         <input type="text">
                     </div>
-                    </a>
+                    
                 </li>
 
                 <li>
@@ -70,13 +70,27 @@
         </div>
 
         <div class="layout__content">
+
+            <h3 class="content__info">Ventas / Cliente</h3>
+
             <div class="center-content">
-                    //va la información     
+    <!-- AQUI EMPIEZA LO QUE CAMBIA EN CADA VISTA-->
 
+                <div class="content__inputs">
+                    <div class="inputs__group">
+                        <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
+                        <label class="inputs__label" for="">Buscar</label>
+                    </div>
+                    <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
 
+                    <input type="submit" class="inputs__buttom" value="+ CREAR CLIENTE">
+                </div>
 
+                <div class="content__data">
+                    AQUI YA PONEN SUS TABLAS Y DEMAS INFORMACIÓN
+                </div>
 
-
+        <!-- AQUI TERMINA LO QUE CAMBIA EN CADA VISTA-->
             </div>
         </div>
 
