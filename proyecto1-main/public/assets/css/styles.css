@@ -1,0 +1,143 @@
+:root {
+    --color-principal: #ffffff;
+    --color-secundario: #04B4E0;
+    --color-terciario: #000000;
+
+
+    --color-background: #F2F7F9;
+    --color-transparent: transparent;
+
+    --color-icon: #B5B6B7;
+    --color-subtitle: #9E9E9E;
+    --color-title: #222222;
+    --color-text: #555;
+
+    --color-border-reviews: #E5E6E7;
+    --color-company: #A5A6A7;
+
+    --color-background-certificate: #F5F5F5;
+    --color-background-contact: #FCFCFC;
+}
+html {
+    font-size: 10px;
+
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: var(--color-text);
+    }
+
+
+.layout {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+/*BARRA LATERAL*/
+.layout__left{
+    flex-basis: 15%;
+    background-color: var(--color-icon);
+    display: flex;
+    flex-direction: column;
+}
+.left__title{
+    flex-basis: 11rem;
+    text-align: center;
+    align-content: center;
+}
+.title_menu{
+    font-size: 4rem;
+}
+.left__container{
+    flex-basis: calc(100% - 11rem);
+}
+
+.left__search-bar{
+    flex: 2rem;
+    font-size: 1.2rem;
+    padding: 2rem;
+    color: var(--color-principal);
+}
+.list__option{
+    font-size: 2.5rem;
+    padding: 1rem 1rem 1rem 3rem;
+}
+.option__submenu{
+    padding-left: 5rem;
+}
+
+/*PIE DE PAGINA*/
+.footer {
+    position: absolute;
+    bottom: 0.2rem;
+    height: 2.5rem;
+    width: 15%;
+    border: 0.1rem solid var(--color-terciario);
+}
+.footer__info{
+    position: relative;
+}
+.info__text{
+    background-color: var(--color-principal);
+    text-align: center;
+}
+
+/*CONTENIDO DE LA DERECHA*/
+.layout__right{
+    flex-basis: 85%;
+    display: flex;
+    flex-direction: column;
+}
+.layout__header {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 10px;
+    text-align: center;
+    flex-basis: 11rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header__name{
+    flex-basis: 80%;
+}
+.header__title{
+    font-size: 5.5rem;
+}
+.header__content{
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.user__container-img{
+    width: 8rem;
+    padding-top: 0.5rem;
+}
+.log-out__icon{
+    padding-top: 0.5rem;
+    color: var(--color-icon);
+    font-size: 7rem;
+    transition: all 300ms ease-in-out;
+}
+.user__img{
+    border-radius: 1rem;
+    width: fit-content;
+}
+.log-out__name,
+.user__name{
+    color: var(--color-principal);
+    font-size: 1.5rem;
+}
+
+.layout__content{
+    flex-basis: calc(100% - 11rem);
+    padding: 2rem;
+}

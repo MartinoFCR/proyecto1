@@ -1,0 +1,201 @@
+/*DEFI8NICIÓN DE VARIABLES*/
+:root {
+    --color-principal: #ffffff;
+    --color-secundario: #04B4E0;
+    --color-terciario: #000000;
+
+
+    --color-background: #F2F7F9;
+    --color-transparent: transparent;
+
+    --color-icon: #B5B6B7;
+    --color-subtitle: #9E9E9E;
+    --color-title: #222222;
+    --color-text: #555;
+
+    --color-border-reviews: #E5E6E7;
+    --color-company: #A5A6A7;
+
+    --color-background-certificate: #F5F5F5;
+    --color-background-contact: #FCFCFC;
+}
+
+/*ESTILOS GENERALES*/
+html {
+    font-size: 10px;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-secundario);
+    font-family: "Poppins", helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: var(--color-text);
+    overflow: hidden;
+    /*HACE QUE NO HAYA BARRA DE SCROOL*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-title);
+
+}
+
+/* IMAGEN DE FONDO */
+body {
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -38px -95px;
+}
+
+/*ESTRUCTURA PRINCIPAL*/
+.layout {
+    background-color: var(--color-background);
+    position: relative;
+    min-width: 129rem;
+    width: 60%;
+    min-height: 60vh;
+    height: 70vh;
+    margin: 10vh auto;
+    display: grid;
+    grid-template-areas: "aside content";
+    grid-template-columns: 50% 50%;
+    overflow: hidden; /*HACE QUE LA INFORMACIÓN NO SE DESBORDE DEL DIV, Y SIMPLEMENTE SE OCULTE*/
+
+    /*SOMBRA DETRAS DEL LAYOUT*/
+    border-radius: 4rem;
+    box-shadow: 0 0 100px rgb(0, 0, 0, 0.25);
+
+
+}
+.layout__login,
+.layout__forget-password{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-right: 0.5rem solid var(--color-secundario);
+}
+.login__form-box,
+.forget-password__form-box{
+    display: flex;
+    flex-direction: column;
+    min-width: 45rem;
+    min-height: 50rem;
+}
+.login__form-header,
+.forget-password__form-header{
+    margin-bottom: 4rem;
+    display: inline-block;
+    text-align: center;
+}
+.login__title,
+.forget-password__title{
+    font-size: 3.2rem;
+    position: relative;
+}
+.form__container{
+    text-align: left;
+}
+.form__group {
+    width: 42rem;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.form__input {
+    position: relative;
+    width: 100%;
+    height: 4.2rem;
+    display: block;
+    padding: 1rem 1.2rem;
+    border: 0.2rem solid var(--color-border-reviews);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    outline: none;
+    box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, .1);
+    background-color: transparent;
+    line-height: 2.1rem;
+}
+
+/*EFECTO DEL FORMULARIO*/
+.form__input:focus {
+    border: 0.2rem solid var(--color-secundario);
+}
+
+.form__label {
+    position: absolute;
+    top: 2.4rem;
+    left: 1.5rem;
+    z-index: 1;
+    color: var(--color-company);
+    transition: all 300ms ease-in-out;
+    pointer-events: none;
+    /*Esto hace que el label no interfiera al dar click en el input*/
+}
+
+.form__input:focus~label,
+/*El simbolo ~ permite que se afecte el estilo del elemento siguiente al ejecer un efecto sobre otro element*/
+.form__input:not(:placeholder-shown)~label {
+    /*Esto hace que si el placeholder NO se muestra, es decir, si el campo ya se llenó, entonces que el label siga arriba y no vuelva a su posicion inicial*/
+    top: -2rem;
+    left: 0;
+    z-index: 1;
+    font-size: 1.3rem;
+    color: var(--color-secundario);
+}
+.form__input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form__input::-moz-placeholder {
+    color: transparent;
+}
+.form__buttom {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border: 0.2rem solid var(--color-secundario);
+    color: var(--color-title);
+    background-color: var(--color-principal);
+    border-radius: 3rem;
+    box-shadow: 0 1rem 1rem -0.8rem rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form__buttom:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+.login__line,
+.forget-password__line{
+    margin: 1rem;
+    margin-top: 2.5rem;
+    border: 0.1rem solid var(--color-secundario);
+}
+.login__forget-password,
+.forget-password__login{
+    margin: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--color-secundario);
+}
+
+
+.layout__logo{
+    background-color: var(--color-terciario);
+}
+.container__img{
+    width: 62rem;
+    background-size: cover;
+}
