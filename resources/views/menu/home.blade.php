@@ -71,7 +71,12 @@
 
         <div class="layout__content">
             <div class="center-content">
-                <h1>sdasdasd</h1>
+                    //va la información     
+
+
+
+
+
             </div>
         </div>
 
