@@ -113,11 +113,24 @@
 
         <div class="layout__content">
 
-            <h3 class="content__info">Bienvenido</h3>
+            <h3 class="content__info">Almacen / Articulos</h3>
 
             <div class="center-content">
     <!-- AQUI EMPIEZA LO QUE CAMBIA EN CADA VISTA-->
 
+                <div class="content__inputs">
+                    <div class="inputs__group">
+                        <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
+                        <label class="inputs__label" for="">Buscar</label>
+                    </div>
+                    <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
+
+                    <input type="submit" class="inputs__buttom" value="+ CREAR ARTICULO">
+                </div>
+
+                <div class="content__data">
+                    AQUI YA PONEN SUS TABLAS Y DEMAS INFORMACIÓN
+                </div>
 
         <!-- AQUI TERMINA LO QUE CAMBIA EN CADA VISTA-->
             </div>
