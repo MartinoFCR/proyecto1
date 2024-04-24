@@ -43,9 +43,10 @@ body {
 /*BARRA LATERAL*/
 .layout__left{
     flex-basis: 15%;
-    background-color: var(--color-icon);
+    background-color: var(--color-secundario);
     display: flex;
     flex-direction: column;
+    margin-right: 0.5rem;
 }
 .left__title{
     flex-basis: 11rem;
@@ -96,20 +97,21 @@ body {
     flex-direction: column;
 }
 .layout__header {
-    background-color: var(--color-secundario);
-    color: var(--color-principal);
+    background-color: var(--color-principal);
+    color: var(--color-title);
     padding: 10px;
     text-align: center;
-    flex-basis: 11rem;
+    flex-basis: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    box-shadow: 0 0 100px rgb(0, 0, 0, 0.25);
 }
 .header__name{
     flex-basis: 80%;
 }
 .header__title{
-    font-size: 5.5rem;
+    font-size: 3.5rem;
 }
 .header__content{
     flex-basis: 15%;
@@ -117,14 +119,19 @@ body {
     flex-direction: row;
     justify-content: space-around;
 }
+.header__user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .user__container-img{
-    width: 8rem;
+    width: 4rem;
     padding-top: 0.5rem;
 }
 .log-out__icon{
     padding-top: 0.5rem;
-    color: var(--color-icon);
-    font-size: 7rem;
+    color: var(--color-secundario);
+    font-size: 3rem;
     transition: all 300ms ease-in-out;
 }
 .user__img{
@@ -133,11 +140,13 @@ body {
 }
 .log-out__name,
 .user__name{
-    color: var(--color-principal);
+    color: var(--color-title);
     font-size: 1.5rem;
 }
 
 .layout__content{
-    flex-basis: calc(100% - 11rem);
+    flex-basis: calc(100% - 8rem);
+    margin-top: 0.5rem;
     padding: 2rem;
+    background-color: var(--color-background);
 }

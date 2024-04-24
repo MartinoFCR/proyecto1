@@ -19,38 +19,28 @@
             <h1 class="title_menu">MENÚ</h1>
         </div>
 
-        <div class="left__search-bar">
-            <h1>BARRA</h1>
-        </div>
-
         <div class="left__container">
             <ul class="list__content">
-                <li class="list__option"  onclick="toggleSubMenu('option__submenu1')">Administración</li>
-                <div class="option__submenu" id="option__submenu1">
-                    <ul>
+                <li>
+                    <a href="">
+                    <div class="left__search-bar">
+                        <input type="text">
+                    </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="option__link" href="">
+                        <i class="icono"></i>
+                        <span class="option__title">Administración</span>
+                    </a>
+                    <ul class="list__submenu">
                         <li><a href="#">Perfiles de usuarios</a></li>
                         <li><a href="#">Usuario</a></li>
                         <li><a href="#">Empleados</a></li>
                     </ul>
-                </div>
-                <li class="list__option" onclick="toggleSubMenu('option__submenu2')">Compras</li>
-                <div class="option__submenu" id="option__submenu2">
-                    <ul>
-                        <!-- Opciones de submenú para Compras -->
-                    </ul>
-                </div>
-                <li class="list__option" onclick="toggleSubMenu('option__submenu3')">Ventas</li>
-                <div class="option__submenu" id="option__submenu3">
-                    <ul>
-                        <!-- Opciones de submenú para Ventas -->
-                    </ul>
-                </div>
-                <li class="list__option" onclick="toggleSubMenu('option__submenu4')">Almacén</li>
-                <div class="option__submenu" id="option__submenu4">
-                    <ul>
-                        <!-- Opciones de submenú para Almacén -->
-                    </ul>
-                </div>
+                </li>
+
             </ul>
         </div>
     </div>
