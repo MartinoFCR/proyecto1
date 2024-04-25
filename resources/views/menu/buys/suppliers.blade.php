@@ -29,7 +29,7 @@
                     </div>
                     
                 </li>
-            -->
+                -->
 
                 <li>
                     <a class="option__link" href="">
@@ -37,12 +37,12 @@
                         <span class="option__title">ADMINISTRACIÓN</span>
                     </a>
                     <ul class="list__submenu">
-                        <li><a href="#">Ajuste de empresa</a></li>
-                        <li><a href="#">Categorias de prendas</a></li>
-                        <li><a href="#">Sucursales</a></li>
-                        <li><a href="#">Empleados</a></li>
-                        <li><a href="#">Perfiles de usuario</a></li>
-                        <li><a href="#">Usuarios</a></li>
+                        <li><a href="/config">Ajuste de empresa</a></li>
+                        <li><a href="/categories">Categorias de prendas</a></li>
+                        <li><a href="/offices">Sucursales</a></li>
+                        <li><a href="/employees">Empleados</a></li>
+                        <li><a href="/user_profile">Perfiles de usuario</a></li>
+                        <li><a href="/users">Usuarios</a></li>
                     </ul>
                 </li>
 
@@ -52,9 +52,9 @@
                         <span class="option__title">VENTAS</span>
                     </a>
                     <ul class="list__submenu">
-                        <li><a href="#">Factura</a></li>
-                        <li><a href="#">Clientes</a></li>
-                        <li><a href="#">Cotizacion</a></li>
+                        <li><a href="/bills">Factura</a></li>
+                        <li><a href="/clients">Clientes</a></li>
+                        <li><a href="/quotes">Cotizacion</a></li>
                     </ul>
                 </li>
 
@@ -64,9 +64,9 @@
                         <span class="option__title">COMPRAS</span>
                     </a>
                     <ul class="list__submenu">
-                        <li><a href="#">Proveedores</a></li>
-                        <li><a href="#">Compras</a></li>
-                        <li><a href="#">Orden de compra</a></li>
+                        <li><a href="/suppliers">Proveedores</a></li>
+                        <li><a href="/buys">Compras</a></li>
+                        <li><a href="/buys_orders">Orden de compra</a></li>
                     </ul>
                 </li>
 
@@ -76,11 +76,11 @@
                         <span class="option__title">ALMACEN</span>
                     </a>
                     <ul class="list__submenu">
-                        <li><a href="#">Almacenes</a></li>
-                        <li><a href="#">Kardex</a></li>
-                        <li><a href="#">Traslados</a></li>
-                        <li><a href="#">Ajustes</a></li>
-                        <li><a href="#">Articulos</a></li>
+                        <li><a href="/storages">Almacenes</a></li>
+                        <li><a href="/kardex">Kardex</a></li>
+                        <li><a href="/transfers">Traslados</a></li>
+                        <li><a href="/storage_config">Ajustes</a></li>
+                        <li><a href="/products">Articulos</a></li>
                     </ul>
                 </li>
             </ul>
@@ -113,7 +113,7 @@
 
         <div class="layout__content">
 
-            <h3 class="content__info">Ventas / Cliente</h3>
+            <h3 class="content__info">Compras / Proveedores</h3>
 
             <div class="center-content">
     <!-- AQUI EMPIEZA LO QUE CAMBIA EN CADA VISTA-->
@@ -125,7 +125,7 @@
                     </div>
                     <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
 
-                    <input type="submit" class="inputs__buttom" value="+ CREAR CLIENTE">
+                    <input type="submit" class="inputs__buttom" value="+ CREAR PROVEEDOR">
                 </div>
 
                 <div class="content__data">
