@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use App\Models\products;
 use Illuminate\Auth\Access\Response;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class ProductsController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      */
@@ -35,6 +37,22 @@ class ProductsController extends Controller
     public function store(Request $request)
     {
         //
+       
+        $validator = Validator::make($request->all(), [
+            'id'=>'required|integer|max:20',
+            'name_product'=>'required|string|max:100',
+            'type_product'=>'required|string|max:100',
+            'unit_price'=>'required|string|max:100',
+            'sale_price'=>'required|string|max:100',
+            'stock_product'=>'required|string|max:100',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+
         $dataproduct = request()->except('_token');
         Products::insert($dataproduct); //Insert product data except token
         // return response()->json($dataproduct);

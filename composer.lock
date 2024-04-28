@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2beb470f73c1e553b86e34acf209d8b",
+    "content-hash": "80221c24fcce2adfcd4b1ebaa9bbe4ef",
     "packages": [
         {
             "name": "brick/math",
@@ -1890,6 +1890,61 @@
             "time": "2024-01-28T23:22:08+00:00"
         },
         {
+            "name": "mailboxvalidator-laravel/validation",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MailboxValidator/MailboxValidatorLaravel.git",
+                "reference": "d96af9e64057346d5ccb1b605b986e01feb87726"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MailboxValidator/MailboxValidatorLaravel/zipball/d96af9e64057346d5ccb1b605b986e01feb87726",
+                "reference": "d96af9e64057346d5ccb1b605b986e01feb87726",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MailboxValidatorLaravel\\Validation\\ValidationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MailboxValidatorLaravel\\Validation\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "MailboxValidator",
+                    "email": "support@mailboxvalidator.com"
+                }
+            ],
+            "description": "Laravel package to validate an email by using MailboxValidator API.",
+            "keywords": [
+                "disposable",
+                "email validation",
+                "laravel",
+                "laravel 5",
+                "laravel 6",
+                "laravel 7",
+                "laravel 8",
+                "laravel 9",
+                "mailboxvalidator"
+            ],
+            "support": {
+                "issues": "https://github.com/MailboxValidator/MailboxValidatorLaravel/issues",
+                "source": "https://github.com/MailboxValidator/MailboxValidatorLaravel/tree/1.1.0"
+            },
+            "time": "2023-12-26T07:39:39+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "3.5.0",
             "source": {
@@ -3241,6 +3296,46 @@
                 }
             ],
             "time": "2023-11-08T05:53:05+00:00"
+        },
+        {
+            "name": "swoft-laravel/validation",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RiceWong/swoft-laravel-validation.git",
+                "reference": "07bbca4c528146a1836d857b29ff807c07b092c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RiceWong/swoft-laravel-validation/zipball/07bbca4c528146a1836d857b29ff807c07b092c1",
+                "reference": "07bbca4c528146a1836d857b29ff807c07b092c1",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "SwoftLaravel\\Validation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "huangweiqiang",
+                    "email": "ricky.huang@wetax.com.cn"
+                }
+            ],
+            "description": "laravel validation in swoft",
+            "support": {
+                "issues": "https://github.com/RiceWong/swoft-laravel-validation/issues",
+                "source": "https://github.com/RiceWong/swoft-laravel-validation/tree/develop"
+            },
+            "time": "2019-05-21T09:07:50+00:00"
         },
         {
             "name": "symfony/clock",
@@ -5807,6 +5902,56 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "x-laravel/validation-extend",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/X-Laravel/validation-extend.git",
+                "reference": "e0cf161a32c09613e7e1c7b6329cebac40085e81"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/X-Laravel/validation-extend/zipball/e0cf161a32c09613e7e1c7b6329cebac40085e81",
+                "reference": "e0cf161a32c09613e7e1c7b6329cebac40085e81",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": ">=5.5",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "XLaravel\\ValidationExtend\\Providers\\ValidationExtendServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "XLaravel\\ValidationExtend\\": "./src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mehmet ÖĞMEN",
+                    "email": "www@mehmetogmen.com.tr",
+                    "homepage": "https://www.mehmetogmen.com.tr",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Adds rules that may be required that are not in the Laravel validation class.",
+            "support": {
+                "issues": "https://github.com/X-Laravel/validation-extend/issues",
+                "source": "https://github.com/X-Laravel/validation-extend/tree/v1.0.0"
+            },
+            "time": "2021-02-06T20:41:52+00:00"
         }
     ],
     "packages-dev": [
