@@ -31,8 +31,9 @@
                     </div>
                     
                 </li>
-            -->
+                -->
 
+<<<<<<< HEAD:resources/views/menu/almacen/articulos.blade.php
                     <li>
                         <a class="option__link" href="">
                             <i class="icono"></i>
@@ -86,6 +87,68 @@
                         </ul>
                     </li>
                 </ul>
+=======
+                <li>
+                    <a class="option__link" href="">
+                        <i class="icono"></i>
+                        <span class="option__title">ADMINISTRACIÓN</span>
+                    </a>
+                    <ul class="list__submenu">
+                        <li><a href="/config">Ajuste de empresa</a></li>
+                        <li><a href="/categories">Categorias de prendas</a></li>
+                        <li><a href="/offices">Sucursales</a></li>
+                        <li><a href="/employees">Empleados</a></li>
+                        <li><a href="/user_profile">Perfiles de usuario</a></li>
+                        <li><a href="/users">Usuarios</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="option__link" href="">
+                        <i class="icono"></i>
+                        <span class="option__title">VENTAS</span>
+                    </a>
+                    <ul class="list__submenu">
+                        <li><a href="/bills">Factura</a></li>
+                        <li><a href="/clients">Clientes</a></li>
+                        <li><a href="/quotes">Cotizacion</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="option__link" href="">
+                        <i class="icono"></i>
+                        <span class="option__title">COMPRAS</span>
+                    </a>
+                    <ul class="list__submenu">
+                        <li><a href="/suppliers">Proveedores</a></li>
+                        <li><a href="/buys">Compras</a></li>
+                        <li><a href="/buys_orders">Orden de compra</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="option__link" href="">
+                        <i class="icono"></i>
+                        <span class="option__title">ALMACEN</span>
+                    </a>
+                    <ul class="list__submenu">
+                        <li><a href="/storages">Almacenes</a></li>
+                        <li><a href="/kardex">Kardex</a></li>
+                        <li><a href="/transfers">Traslados</a></li>
+                        <li><a href="/storage_config">Ajustes</a></li>
+                        <li><a href="/products">Articulos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layout__right">
+        <div class="layout__header">
+            <div class="header__name">
+                <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
+>>>>>>> 1b3cd6985149e1ec16a93756a4675ca51116ece6:resources/views/menu/storages/products.blade.php
             </div>
         </div>
 
