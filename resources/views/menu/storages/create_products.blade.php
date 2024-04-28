@@ -176,58 +176,12 @@
                     <h3 class="content__info">Almacen / Articulos</h3>
 
                     <div class="center-content">
-                        <div class="content__inputs">
-                            <div class="inputs__group">
-                                <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
-                                <label class="inputs__label" for="">Buscar</label>
-                            </div>
-                            <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
-                            <a href="{{ url('products/create') }}">
-                                <input type="submit" class="inputs__buttom" value="+ CREAR ARTICULO">
-                            </a>
-                            
-                        </div>
-                        @if(Session::has('mensaje'))
-                        {{ Session::get('mensaje') }}
-                        @endif
                         <div class="content__data">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Id Producto</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Tipo de Producto</th>
-                                        <th scope="col">Precio Unitario</th>
-                                        <th scope="col">Precio de Venta</th>
-                                        <th scope="col">Stock</th>
-                                        <th scope="col">Acciones</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach($products as $product)
-                                    <tr>
-                                        <td>{{ $product->id }}</td>
-                                        <td>{{ $product->name_product }}</td>
-                                        <td>{{ $product->type_product }}</td>
-                                        <td>{{ $product->unit_price }}</td>
-                                        <td>{{ $product->sale_price }}</td>
-                                        <td>{{ $product->stock_product }}</td>
-                                        <td>
-
-                                            <a href="{{ url('/products/'.$product->id.'/edit') }}" class="btn btn-warning">
-                                                Editar
-                                            </a>
-
-                                            <form action="{{ url('/products/'.$product->id) }}" class="d-inline" method="post">
-                                                @csrf
-                                                {{ method_field('DELETE') }}
-                                                <input class="btn btn-danger" type="submit" onclick="return confirm('¿Quieres Eliminar el producto?')" value="Borrar">
-                                            </form>
-                                        </td>
-                                    </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
+                            <form action="{{ url('/products') }}" method="post" enctype="multipart/form-data">
+                                @csrf
+                                @include('menu/storages/form_products', ['modo'=>'Crear'])
+                                
+                            </form>
                         </div>
                     </div>
                 </div>

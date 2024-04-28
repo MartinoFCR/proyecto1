@@ -80,7 +80,7 @@
                         <li><a href="/kardex">Kardex</a></li>
                         <li><a href="/transfers">Traslados</a></li>
                         <li><a href="/storage_config">Ajustes</a></li>
-                        <li><a href="/products">Articulos</a></li>
+                        <li><a href="{{ url('products') }}">Articulos</a></li>
                     </ul>
                 </li>
             </ul>

@@ -82,10 +82,10 @@ class HomeController extends Controller
     {
         return view('menu/storages/storage_config');
     }
-    public function products( )
-    {
-        return view('menu/storages/products');
-    }
+    // public function products( )
+    // {
+    //     return view('menu/storages/products');
+    // }
 
     
 }
