@@ -1,0 +1,71 @@
+:root{
+    --color-principal: #F8F2F4;
+    --color-secundario: #17BEBB;
+    --color-terciario: #0E7C7B;
+
+    --color-scrollbar: #D3D3D4;
+    --color-background-scrollbar: #eee;
+}
+
+/*SCROLL PARA CHROME*/
+.layout__left::-webkit-scrollbar{
+    width: 25px;
+    background: transparent;
+}
+
+.layout__left::-webkit-scrollbar-thumb{/*LA PARTE MOVIBLE DEL SCROLL*/
+    border: 10px solid  transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.layout__left:hover::-webkit-scrollbar-thumb{/*CAMBIO DE ESTILO DEL THUMB*/
+    box-shadow: inset 0 0 0 10px var(--color-scrollbar);
+}
+
+.layout__left:hover::-webkit-scrollbar-thumb:hover{/*CAMBIO DE ESTILO DEL THUMB*/
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-secundario);
+
+}
+
+.layout__left::-webkit-scrollbar-track{/*contenedor del scroll*/
+    background-color: transparent;
+    margin: 40px;
+}
+
+/*SCROLL PARA BARRA LATERAL CHROME*/
+body::-webkit-scrollbar{
+    width: 25px;
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb{/*LA PARTE MOVIBLE DEL SCROLL*/
+    border: 10px solid  transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+body:hover::-webkit-scrollbar-thumb{/*CAMBIO DE ESTILO DEL THUMB*/
+    box-shadow: inset 0 0 0 10px var(--color-secundario);
+}
+
+body:hover::-webkit-scrollbar-thumb:hover{/*CAMBIO DE ESTILO DEL THUMB*/
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-terciario);
+
+}
+
+body::-webkit-scrollbar-track{/*contenedor del scroll*/
+    background-color: transparent;
+    margin: 40px;
+}
+
+
+
+/*SCROLL PARA MOZZILLA*/
+
+.layout__left{
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar) transparent;
+}
