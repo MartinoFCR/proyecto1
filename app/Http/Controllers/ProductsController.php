@@ -39,18 +39,20 @@ class ProductsController extends Controller
         //
        
         $validator = Validator::make($request->all(), [
-            'id'=>'required|integer|max:20',
-            'name_product'=>'required|string|max:100',
-            'type_product'=>'required|string|max:100',
-            'unit_price'=>'required|string|max:100',
-            'sale_price'=>'required|string|max:100',
-            'stock_product'=>'required|string|max:100',
+            'id' => 'required|integer|max:20',
+            'name_product' => 'required|string|max:100',
+            'type_product' => 'required|string|max:100',
+            'unit_price' => 'required|string|max:100',
+            'sale_price' => 'required|string|max:100',
+            'stock_product' => 'required|string|max:100',
+        ], [
+            'required' => 'El campo :attribute es obligatorio.',
         ]);
-
+        
         if ($validator->fails()) {
             return redirect()->back()
-                        ->withErrors($validator)
-                        ->withInput();
+                ->withErrors($validator)
+                ->withInput();
         }
 
         $dataproduct = request()->except('_token');
@@ -84,19 +86,22 @@ class ProductsController extends Controller
     public function update(Request $request, $product_id)
     {
         $validator = Validator::make($request->all(), [
-            'id'=>'required|integer|max:20',
-            'name_product'=>'required|string|max:100',
-            'type_product'=>'required|string|max:100',
-            'unit_price'=>'required|string|max:100',
-            'sale_price'=>'required|string|max:100',
-            'stock_product'=>'required|string|max:100',
+            'id' => 'required|integer|max:20',
+            'name_product' => 'required|string|max:100',
+            'type_product' => 'required|string|max:100',
+            'unit_price' => 'required|string|max:100',
+            'sale_price' => 'required|string|max:100',
+            'stock_product' => 'required|string|max:100',
+        ], [
+            'required' => 'El campo :attribute es obligatorio.',
         ]);
-
+        
         if ($validator->fails()) {
             return redirect()->back()
-                        ->withErrors($validator)
-                        ->withInput();
+                ->withErrors($validator)
+                ->withInput();
         }
+        
         //We search and update product data
         $dataproduct = request()->except(['_token', '_method']);
         products::where('id','=',$product_id)->update($dataproduct);
