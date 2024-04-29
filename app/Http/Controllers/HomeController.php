@@ -51,10 +51,10 @@ class HomeController extends Controller
 
 
 
-    public function suppliers( )
-    {
-        return view('menu/buys/suppliers');
-    }
+    // public function suppliers( )
+    // {
+    //     return view('menu/buys/suppliers');
+    // }
     public function buys( )
     {
         return view('menu/buys/buys');
@@ -82,10 +82,10 @@ class HomeController extends Controller
     {
         return view('menu/storages/storage_config');
     }
-    public function products( )
-    {
-        return view('menu/storages/products');
-    }
+    // public function products( )
+    // {
+    //     return view('menu/storages/products');
+    // }
 
     
 }

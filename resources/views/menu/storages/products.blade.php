@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/reset.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/styles.css') }}">
+    <script src="https://kit.fontawesome.com/6dd0aa23c2.js" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home</title>
@@ -9,9 +19,23 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/scroll.css') }}">
 <script src="https://kit.fontawesome.com/6dd0aa23c2.js" crossorigin="anonymous"></script>
 <!--<script src="https://cdn.tailwindcss.com"></script>-->
+
 </head>
+
 <body>
 
+
+
+    <div class="layout">
+
+        <div class="layout__left">
+            <div class="left__title">
+                <h1 class="title_menu">MENÚ</h1>
+            </div>
+
+            <div class="left__container">
+                <ul class="list__content">
+                    <!--
 
 <div class="layout">
     <div class="layout__left">
@@ -25,6 +49,7 @@
 
             <ul class="dropdown" id="menu">
                 <!--
+
                 <li>
                     
                     <div class="left__search-bar">
@@ -34,6 +59,67 @@
                 </li>
                 -->
 
+
+
+                    <li>
+                        <a class="option__link" href="">
+                            <i class="icono"></i>
+                            <span class="option__title">ADMINISTRACIÓN</span>
+                        </a>
+                        <ul class="list__submenu">
+                            <li><a href="#">Ajuste de empresa</a></li>
+                            <li><a href="#">Categorias de prendas</a></li>
+                            <li><a href="#">Sucursales</a></li>
+                            <li><a href="#">Empleados</a></li>
+                            <li><a href="#">Perfiles de usuario</a></li>
+                            <li><a href="#">Usuarios</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="option__link" href="">
+                            <i class="icono"></i>
+                            <span class="option__title">VENTAS</span>
+                        </a>
+                        <ul class="list__submenu">
+                            <li><a href="#">Factura</a></li>
+                            <li><a href="#">Clientes</a></li>
+                            <li><a href="#">Cotizacion</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="option__link" href="">
+                            <i class="icono"></i>
+                            <span class="option__title">COMPRAS</span>
+                        </a>
+                        <ul class="list__submenu">
+                            <li><a href="#">Proveedores</a></li>
+                            <li><a href="#">Compras</a></li>
+                            <li><a href="#">Orden de compra</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="option__link" href="">
+                            <i class="icono"></i>
+                            <span class="option__title">ALMACEN</span>
+                        </a>
+                        <ul class="list__submenu">
+                            <li><a href="#">Almacenes</a></li>
+                            <li><a href="#">Kardex</a></li>
+                            <li><a href="#">Traslados</a></li>
+                            <li><a href="#">Ajustes</a></li>
+                            <li><a href="#">Articulos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <li>
+                    <a class="option__link" href="">
+                        <i class="icono"></i>
+                        <span class="option__title">ADMINISTRACIÓN</span>
+
                 <li class="dropdown__list">
                     <a class="dropdown__link" href="">
                         <i class="dropdown__icon fa-solid fa-user-tie"></i>
@@ -41,6 +127,7 @@
                         <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
 
                         <input type="checkbox" class="dropdown__check">
+
                     </a>
                     
                     <div class="dropdown__content">
@@ -144,50 +231,131 @@
                         </ul>
                     </div>
                 </li>
-            </ul>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <div class="layout__right">
-        <div class="layout__header">
-            <div class="header__name">
-                <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
+        <div class="layout__right">
+            <div class="layout__header">
+                <div class="header__name">
+                    <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
+                </div>
             </div>
 
-            <div class="header__content">
-                <div class="header__user">
-                    <div class="user__container-img">
-                        <img class="user__img" src="{{ asset('assets/img/user.jpg') }}" alt="Foto del Usuario">
-                    </div>
+            <div class="layout__right">
+                <div class="layout__header">
+                    <div class="header__content">
+                        <div class="header__user">
+                            <div class="user__container-img">
+                                <img class="user__img" src="{{ asset('assets/img/user.jpg') }}" alt="Foto del Usuario">
+                            </div>
 
-                    <h6 class="user__name">Usuario</h6>
-                </div>
+                            <h6 class="user__name">Usuario</h6>
+                        </div>
+
+
+                        <div class="header__log-out">
+                            <a href="#" class="log-out__link">
+                                <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
+                            </a>
+                            <h6 class="log-out__name">Cerrar Sesion</h6>
+                        </div>
+                    </div>
 
                 <div class="header__log-out">
                     <a href="/" class="log-out__link">
                         <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
                     </a>
                     <h6 class="log-out__name">Cerrar Sesion</h6>
+
                 </div>
-            </div>
-        </div>
 
-        <div class="layout__content">
+                <div class="layout__content">
 
-            <h3 class="content__info">Almacen / Articulos</h3>
+                    <h3 class="content__info">Almacen / Articulos</h3>
+
+
+                    <div class="center-content">
+                        <div class="content__inputs">
+                            <div class="inputs__group">
+                                <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
+                                <label class="inputs__label" for="">Buscar</label>
+                            </div>
+                            <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
+                            <a href="{{ url('products/create') }}">
+                                <input type="submit" class="inputs__buttom" value="+ CREAR ARTICULO">
+                            </a>
+                            
+                        </div>
+                        @if(Session::has('mensaje'))
+                        {{ Session::get('mensaje') }}
+                        @endif
+                        <div class="content__data">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Id Producto</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Tipo de Producto</th>
+                                        <th scope="col">Precio Unitario</th>
+                                        <th scope="col">Precio de Venta</th>
+                                        <th scope="col">Stock</th>
+                                        <th scope="col">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($products as $product)
+                                    <tr>
+                                        <td>{{ $product->id }}</td>
+                                        <td>{{ $product->name_product }}</td>
+                                        <td>{{ $product->type_product }}</td>
+                                        <td>{{ $product->unit_price }}</td>
+                                        <td>{{ $product->sale_price }}</td>
+                                        <td>{{ $product->stock_product }}</td>
+                                        <td>
 
             <div class="center-content">
                 <!-- AQUI EMPIEZA LO QUE CAMBIA EN CADA VISTA-->
 
-                <div class="content__inputs">
-                    <div class="inputs__group">
-                        <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
-                        <label class="inputs__label" for="">Buscar</label>
-                    </div>
-                    <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
 
-                    <input type="submit" class="inputs__buttom" value="+ CREAR ARTICULO">
+                                            <a href="{{ url('/products/'.$product->id.'/edit') }}" class="btn btn-warning">
+                                                Editar
+                                            </a>
+
+                                            <form action="{{ url('/products/'.$product->id) }}" class="d-inline" method="post">
+                                                @csrf
+                                                {{ method_field('DELETE') }}
+                                                <input class="btn btn-danger" type="submit" onclick="return confirm('¿Quieres Eliminar el producto?')" value="Borrar">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__info">
+                <h3 class="info__text">Pie de página</h3>
+            </div>
+        </div>
+        <script>
+            function toggleSubMenu(option__submenuId) {
+                let option__submenu = document.getElementById(option__submenuId);
+                if (option__submenu.style.display === "block") {
+                    option__submenu.style.display = "none";
+                } else {
+                    option__submenu.style.display = "block";
+                }
+            }
+        </script>
 
                 <div class="content__data">
 
@@ -205,5 +373,7 @@
     </div>
 </div>
 
+
 </body>
+
 </html>

@@ -64,7 +64,7 @@
                         <span class="option__title">COMPRAS</span>
                     </a>
                     <ul class="list__submenu">
-                        <li><a href="/suppliers">Proveedores</a></li>
+                        <li><a href="{{ url('suppliers') }}">Proveedores</a></li>
                         <li><a href="/buys">Compras</a></li>
                         <li><a href="/buys_orders">Orden de compra</a></li>
                     </ul>
@@ -80,7 +80,7 @@
                         <li><a href="/kardex">Kardex</a></li>
                         <li><a href="/transfers">Traslados</a></li>
                         <li><a href="/storage_config">Ajustes</a></li>
-                        <li><a href="/products">Articulos</a></li>
+                        <li><a href="{{ url('products') }}">Articulos</a></li>
                     </ul>
                 </li>
             </ul>

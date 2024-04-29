@@ -104,20 +104,12 @@
                         <h6 class="user__name">Usuario</h6>
                     </div>
 
-
                     <div class="header__log-out">
                         <a href="#" class="log-out__link">
                             <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
                         </a>
                         <h6 class="log-out__name">Cerrar Sesion</h6>
                     </div>
-
-                <div class="header__log-out">
-                    <a href="/" class="log-out__link">
-                        <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
-                    </a>
-                    <h6 class="log-out__name">Cerrar Sesion</h6>
-
                 </div>
             </div>
 
@@ -126,28 +118,28 @@
                 <h3 class="content__info">Compras / Proveedores</h3>
 
                 <div class="center-content">
-                    <!-- AQUI EMPIEZA LO QUE CAMBIA EN CADA VISTA-->
-
-                    <div class="content__inputs">
-                        <div class="inputs__group">
-                            <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
-                            <label class="inputs__label" for="">Buscar</label>
-                        </div>
-                        <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
-                        <a href="{{ url('suppliers/create') }}">
-                            <input type="submit" class="inputs__buttom" value="+ CREAR PROVEEDOR">
-                        </a>
-                    </div>
 
                     <div class="content__data">
-                        AQUI YA PONEN SUS TABLAS Y DEMAS INFORMACIÓN
+                        <form action="{{ url('/suppliers') }}" method="post">
+                            @csrf
+                            <label for="supplier_id">Id Proveedor</label>
+                            <input type="text" name="supplier_id" id="supplier_id">
+                            <br>
+                            <label for="name_supplier">Nombre Proveedor</label>
+                            <input type="text" name="name_supplier" id="name_supplier">
+                            <br>
+                            <label for="city_supplier">Ciudad</label>
+                            <input type="text" name="city_supplier" id="city_supplier">
+                            <br>
+                            <label for="phone">Telefono</label>
+                            <input type="text" name="phone" id="phone">
+                            <br>
+                            <label for="email">Correo</label>
+                            <input type="text" name="email" id="email">
+                            <br>
+                            <input type="submit" value="Guardar datos">
+                        </form>
                     </div>
-
-
-                    <!-- AQUI TERMINA LO QUE CAMBIA EN CADA VISTA-->
-
-                <div class="content__data">
-
                 </div>
             </div>
 

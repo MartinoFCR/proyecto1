@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\SuppliersController;
+use App\Http\Controllers\ProductsController;
 
 Route::get('/',                 [LoginController::class, 'login']);
 Route::get('/forget_password',  [LoginController::class, 'forget_password']);
@@ -28,7 +30,9 @@ Route::get('/storages',         [HomeController::class, 'storages']);
 Route::get('/kardex',           [HomeController::class, 'kardex']);
 Route::get('/transfers',        [HomeController::class, 'transfers']);
 Route::get('/storage_config',   [HomeController::class, 'storage_config']);
-Route::get('/products',         [HomeController::class, 'products']);
+
+Route::resource('products', ProductsController::class);
+Route::resource('suppliers', SuppliersController::class);
 
 // routes/web.php
 Route::post('/procesar-formulario', [FormController::class, 'procesar_login'])->name('procesar-formulario');

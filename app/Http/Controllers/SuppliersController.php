@@ -13,6 +13,7 @@ class SuppliersController extends Controller
     public function index()
     {
         //
+        return view('menu/buys/suppliers');
     }
 
     /**
@@ -21,6 +22,7 @@ class SuppliersController extends Controller
     public function create()
     {
         //
+        return view('menu/buys/create_suppliers');
     }
 
     /**
@@ -29,6 +31,9 @@ class SuppliersController extends Controller
     public function store(Request $request)
     {
         //
+        $datasupplier = request()->except('_token');
+        suppliers::insert($datasupplier);
+        return response()->json($datasupplier);
     }
 
     /**

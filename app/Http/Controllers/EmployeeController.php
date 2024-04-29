@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\employee;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class EmployeeController extends Controller
 {
