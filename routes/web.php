@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\SuppliersController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\CustomersController;
 
 Route::get('/',                 [LoginController::class, 'login']);
 Route::get('/forget_password',  [LoginController::class, 'forget_password']);
@@ -19,7 +20,7 @@ Route::get('/user_profile',     [HomeController::class, 'user_profile']);
 Route::get('/users',            [HomeController::class, 'users']);
 
 Route::get('/bills',            [HomeController::class, 'bills']);
-Route::get('/clients',          [HomeController::class, 'clients']);
+Route::resource('clients', CustomersController::class);
 Route::get('/quotes',           [HomeController::class, 'quotes']);
 
 Route::get('/suppliers',        [HomeController::class, 'suppliers']);

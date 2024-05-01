@@ -53,7 +53,7 @@
                     </a>
                     <ul class="list__submenu">
                         <li><a href="/bills">Factura</a></li>
-                        <li><a href="/clients">Clientes</a></li>
+                        <li><a href="{{ url('clients') }}">Clientes</a></li>
                         <li><a href="/quotes">Cotizacion</a></li>
                     </ul>
                 </li>

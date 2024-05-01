@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\customers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class CustomersController extends Controller
 {
@@ -13,6 +14,8 @@ class CustomersController extends Controller
     public function index()
     {
         //
+        $data['customers'] = customers::paginate(15); 
+        return view('menu/sells/clients', $data);
     }
 
     /**
@@ -21,6 +24,7 @@ class CustomersController extends Controller
     public function create()
     {
         //
+        return view('menu/sells/create_clients');
     }
 
     /**
@@ -29,6 +33,25 @@ class CustomersController extends Controller
     public function store(Request $request)
     {
         //
+        $validator = Validator::make($request->all(), [
+            'id' => 'required|string|max:100',
+            'name_customer' => 'required|string|max:100',
+            'lastname_customer' => 'required|string|max:100',
+            'phone' => 'required|string|max:100',
+            'city' => 'required|string|max:100',
+            'date' => 'required|date||before:tomorrow',
+        ], [
+            'required' => 'El campo :attribute es obligatorio.',
+        ]);
+    
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withErrors($validator)
+                ->withInput();
+        }
+        $datacustomer = request()->except('_token');
+        customers::insert($datacustomer);
+        return redirect('clients')->with('mensaje','Cliente agregado con éxito');
     }
 
     /**
@@ -42,9 +65,11 @@ class CustomersController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(customers $customers)
+    public function edit($id)
     {
         //
+        $customers = customers::findOrFail($id);
+        return view('menu/sells/edit_clients', compact('customers'));
     }
 
     /**
@@ -53,13 +78,35 @@ class CustomersController extends Controller
     public function update(Request $request, customers $customers)
     {
         //
+        $validator = Validator::make($request->all(), [
+            'id' => 'required|string|max:100',
+            'name_customer' => 'required|string|max:100',
+            'lastname_customer' => 'required|string|max:100',
+            'phone' => 'required|string|max:100',
+            'city' => 'required|string|max:100',
+            'date' => 'required|date||before:tomorrow',
+        ], [
+            'required' => 'El campo :attribute es obligatorio.',
+        ]);
+    
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withErrors($validator)
+                ->withInput();
+        }
+        $datacustomer = request()->except(['_token','_method']);
+        customers::where('id','=',$request->id)->update($datacustomer);
+        $customers = customers::findOrFail($request->id);
+        return redirect('clients')->with('mensaje', 'Cliente modificado con éxito');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(customers $customers)
+    public function destroy($id)
     {
         //
+        customers::destroy($id);
+        return redirect('clients')->with('mensaje','Producto borrado');
     }
 }

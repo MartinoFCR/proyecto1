@@ -116,65 +116,16 @@
             <div class="layout__content">
 
                 <h3 class="content__info">Ventas / Cliente</h3>
-
                 <div class="center-content">
-                    <!-- AQUI EMPIEZA LO QUE CAMBIA EN CADA VISTA-->
-
-                    <div class="content__inputs">
-                        <div class="inputs__group">
-                            <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
-                            <label class="inputs__label" for="">Buscar</label>
-                        </div>
-                        <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
-                        <a href="{{ url('clients/create') }}">
-                            <input type="submit" class="inputs__buttom" value="+ CREAR CLIENTE">
-                        </a>
-                    </div>
-
                     <div class="content__data">
-                        @if(Session::has('mensaje'))
-                        {{ Session::get('mensaje') }}
-                        @endif
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Cedula</th>
-                                    <th>Nombre</th>
-                                    <th>Apellidos</th>
-                                    <th>Telefono</th>
-                                    <th>Ciudad</th>
-                                    <th>Fecha de nacimiento</th>
-                                    <th>Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach($customers as $client)
-                                <tr>
-                                    <td>{{ $client->id }}</td>
-                                    <td>{{ $client->name_customer }}</td>
-                                    <td>{{ $client->lastname_customer }}</td>
-                                    <td>{{ $client->phone }}</td>
-                                    <td>{{ $client->city }}</td>
-                                    <td>{{ $client->date }}</td>
-                                    <td>
-                                        <a href="{{ url('clients/'.$client->id.'/edit') }}"><i class="fa-solid fa-pencil"></i></a>
-                                        <form action="{{ url('/clients/'.$client->id) }}" class="d-inline" method="post">
-                                            @csrf
-                                            {{ method_field('DELETE') }}
-                                            <input class="btn btn-danger" type="submit" onclick="return confirm('¿Quieres Eliminar el Cliente?')" value="Borrar">
-                                        </form>
-                                    </td>
-                                </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
+                        <form action="{{ url('/clients/'.$customers->id) }}" method="post">
+                            @csrf
+                            {{ method_field('PATCH') }}
+                            @include('menu/sells/form_clients', ['modo' => 'Editar'])
+                        </form>
                     </div>
-
-
                 </div>
             </div>
-
-
         </div>
     </div>
 
