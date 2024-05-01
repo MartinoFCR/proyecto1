@@ -132,7 +132,39 @@
                     </div>
 
                     <div class="content__data">
-                        AQUI YA PONEN SUS TABLAS Y DEMAS INFORMACIÓN
+                        <table class="table table-ligth">
+                            <thead>
+                                <tr>
+                                    <th>Id Proveedor</th>
+                                    <th>Nombre Proveedor</th>
+                                    <th>Ciudad</th>
+                                    <th>Telefono</th>
+                                    <th>Correo</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($suppliers as $supplier)
+                                <tr>
+                                    <td>{{ $supplier->supplier_id }}</td>
+                                    <td>{{ $supplier->name_supplier }}</td>
+                                    <td>{{ $supplier->city_supplier }}</td>
+                                    <td>{{ $supplier->phone }}</td>
+                                    <td>{{ $supplier->email }}</td>
+                                    <td>
+                                        <a href="{{ url('/suppliers/'.$supplier->supplier_id.'/edit') }}">
+                                            <button class="table__button"><i class="fa-solid fa-pen-to-square"></i></button>
+                                        </a>
+                                        <form action="{{ url('/suppliers/'.$supplier->supplier_id) }}" method="post">
+                                            @csrf
+                                            {{ method_field('DELETE') }}
+                                            <input type="submit" onclick="return confirm('¿Deseas eliminar este proveedor?')" class="table__button" value="Borrar">
+                                        </form>
+                                    </td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
                     </div>
 
                     <!-- AQUI TERMINA LO QUE CAMBIA EN CADA VISTA-->

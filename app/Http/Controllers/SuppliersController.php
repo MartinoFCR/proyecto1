@@ -13,7 +13,8 @@ class SuppliersController extends Controller
     public function index()
     {
         //
-        return view('menu/buys/suppliers');
+        $data['suppliers'] = suppliers::paginate(15);
+        return view('menu/buys/suppliers', $data);
     }
 
     /**
@@ -34,7 +35,7 @@ class SuppliersController extends Controller
         $datasupplier = request()->except('_token');
         suppliers::insert($datasupplier);
         return response()->json($datasupplier);
-    }
+    } 
 
     /**
      * Display the specified resource.
@@ -63,8 +64,10 @@ class SuppliersController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(suppliers $suppliers)
+    public function destroy($supplier_id)
     {
         //
+        suppliers::destroy($supplier_id);
+        return redirect('suppliers');
     }
 }
