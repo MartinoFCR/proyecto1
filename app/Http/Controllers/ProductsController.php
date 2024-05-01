@@ -105,7 +105,7 @@ class ProductsController extends Controller
         $dataproduct = request()->except(['_token', '_method']);
         products::where('id','=',$product_id)->update($dataproduct);
         $products = products::findOrFail($product_id);
-        return view('menu/storages/edit_products', compact('products'));
+        return redirect('products')->with('mensaje', 'Producto modificado con éxito');
     }
 
     /**
