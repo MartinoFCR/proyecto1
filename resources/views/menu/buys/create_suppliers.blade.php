@@ -122,22 +122,7 @@
                     <div class="content__data">
                         <form action="{{ url('/suppliers') }}" method="post">
                             @csrf
-                            <label for="supplier_id">Id Proveedor</label>
-                            <input type="text" name="supplier_id" id="supplier_id">
-                            <br>
-                            <label for="name_supplier">Nombre Proveedor</label>
-                            <input type="text" name="name_supplier" id="name_supplier">
-                            <br>
-                            <label for="city_supplier">Ciudad</label>
-                            <input type="text" name="city_supplier" id="city_supplier">
-                            <br>
-                            <label for="phone">Telefono</label>
-                            <input type="text" name="phone" id="phone">
-                            <br>
-                            <label for="email">Correo</label>
-                            <input type="text" name="email" id="email">
-                            <br>
-                            <input type="submit" value="Guardar datos">
+                            @include('menu/buys/form_suppliers', ['modo'=>'Crear'])
                         </form>
                     </div>
                 </div>

@@ -112,12 +112,6 @@
                         <h6 class="log-out__name">Cerrar Sesion</h6>
                     </div>
 
-                <div class="header__log-out">
-                    <a href="/" class="log-out__link">
-                        <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
-                    </a>
-                    <h6 class="log-out__name">Cerrar Sesion</h6>
-
                 </div>
             </div>
 
@@ -138,6 +132,10 @@
                             <input type="submit" class="inputs__buttom" value="+ CREAR PROVEEDOR">
                         </a>
                     </div>
+
+                    @if(Session::has('mensaje'))
+                    {{ Session::get('mensaje') }}
+                    @endif
 
                     <div class="content__data">
                         <table class="table table-ligth">
@@ -161,9 +159,9 @@
                                     <td>{{ $supplier->email }}</td>
                                     <td>
                                         <a href="{{ url('/suppliers/'.$supplier->supplier_id.'/edit') }}">
-                                            <button class="table__button"><i class="fa-solid fa-pen-to-square"></i></button>
+                                            Editar
                                         </a>
-                                        <form action="{{ url('/suppliers/'.$supplier->supplier_id) }}" method="post">
+                                        <form action="{{ url('/suppliers/'.$supplier->supplier_id) }}" class="d-inline" method="post">
                                             @csrf
                                             {{ method_field('DELETE') }}
                                             <input type="submit" onclick="return confirm('¿Deseas eliminar este proveedor?')" class="table__button" value="Borrar">

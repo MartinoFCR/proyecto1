@@ -57,8 +57,7 @@ class ProductsController extends Controller
 
         $dataproduct = request()->except('_token');
         Products::insert($dataproduct); //Insert product data except token
-        // return response()->json($dataproduct);
-        return redirect('products')->with('mensaje', 'Producto agregado con èxito');
+        return redirect('products')->with('mensaje', 'Producto agregado con éxito');
     }
 
     /**
