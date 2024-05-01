@@ -1,17 +1,17 @@
 /*DEFI8NICIÓN DE VARIABLES*/
 :root {
-    --color-principal: #ffffff;
-    --color-secundario: #04B4E0;
-    --color-terciario: #000000;
+    --color-principal: #F8F2F4;
+    --color-secundario: #17BEBB;
+    --color-terciario: #0E7C7B;
 
 
-    --color-background: #F2F7F9;
+    --color-background: #F5F3F5;
     --color-transparent: transparent;
 
     --color-icon: #B5B6B7;
     --color-subtitle: #9E9E9E;
-    --color-title: #222222;
-    --color-text: #555;
+    --color-title: #000000;
+    --color-text: #000000;
 
     --color-border-reviews: #E5E6E7;
     --color-company: #A5A6A7;
@@ -122,13 +122,13 @@ body {
     font-size: 1.5rem;
     outline: none;
     box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, .1);
-    background-color: transparent;
+    background-color: var(--color-principal);
     line-height: 2.1rem;
 }
 
 /*EFECTO DEL FORMULARIO*/
 .form__input:focus {
-    border: 0.2rem solid var(--color-secundario);
+    border: 0.2rem solid var(--color-terciario);
 }
 
 .form__label {
@@ -150,7 +150,7 @@ body {
     left: 0;
     z-index: 1;
     font-size: 1.3rem;
-    color: var(--color-secundario);
+    color: var(--color-terciario);
 }
 .form__input::-webkit-input-placeholder {
     color: transparent;
@@ -162,7 +162,7 @@ body {
 .form__buttom {
     padding: 1rem 3rem;
     font-size: 1.5rem;
-    border: 0.2rem solid var(--color-secundario);
+    border: 0.2rem solid var(--color-terciario);
     color: var(--color-title);
     background-color: var(--color-principal);
     border-radius: 3rem;
@@ -172,14 +172,14 @@ body {
 }
 
 .form__buttom:hover {
-    background-color: var(--color-secundario);
+    background-color: var(--color-terciario);
     color: var(--color-principal);
 }
 .login__line,
 .forget-password__line{
     margin: 1rem;
     margin-top: 2.5rem;
-    border: 0.1rem solid var(--color-secundario);
+    border: 0.1rem solid var(--color-terciario);
 }
 .login__forget-password,
 .forget-password__login{
@@ -188,12 +188,12 @@ body {
     text-decoration: none;
     font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
-    color: var(--color-secundario);
+    color: var(--color-terciario);
 }
 
 
 .layout__logo{
-    background-color: var(--color-terciario);
+    background-color: var(--color-text);
 }
 .container__img{
     width: 62rem;

@@ -32,7 +32,7 @@
                 -->
 
                 <li>
-                    <a class="option__link" href="">
+                    <a class="option__link" href="/home">
                         <i class="icono"></i>
                         <span class="option__title">ADMINISTRACIÓN</span>
                     </a>
@@ -103,7 +103,7 @@
                 </div>
 
                 <div class="header__log-out">
-                    <a href="#" class="log-out__link">
+                    <a href="/" class="log-out__link">
                         <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
                     </a>
                     <h6 class="log-out__name">Cerrar Sesion</h6>
