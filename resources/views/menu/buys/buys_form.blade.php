@@ -32,3 +32,25 @@
 <div class="form-group">
   <button type="button" class="btn btn-primary float-rigth">{{$modo}} Producto</button>
 </div>
+<div class="form-group">
+    <h4>Detalle de comprar</h4>
+    <table class="table table-light">
+        <thead class="thead-light">
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4">
+                    <p>TOTAL</p>
+                </th>
+                <th>
+                    <p id="tax_detail"><span id="total">PEN 0.00</span></p>
+                </th>
+            </tr>
+    </table>
+</div>
