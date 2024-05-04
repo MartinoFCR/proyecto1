@@ -29,3 +29,6 @@
   <input type="number"
     class="form-control" name="price" id="price" aria-describedby="helpId">
 </div>
+<div class="form-group">
+  <button type="button" class="btn btn-primary float-rigth">{{$modo}} Producto</button>
+</div>

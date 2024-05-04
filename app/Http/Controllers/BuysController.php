@@ -18,7 +18,7 @@ class BuysController extends Controller
     public function index()
     {
         //
-        $buy = buys::get();
+        $buys = buys::get();
         return view('menu/buys/buys', compact('buys'));
     }
 

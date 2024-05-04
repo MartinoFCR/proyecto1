@@ -7,6 +7,7 @@ use App\Http\Controllers\FormController;
 use App\Http\Controllers\SuppliersController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\CustomersController;
+use App\Http\Controllers\BuysController;
 
 Route::get('/',                 [LoginController::class, 'login']);
 Route::get('/forget_password',  [LoginController::class, 'forget_password']);
@@ -24,7 +25,6 @@ Route::resource('clients', CustomersController::class);
 Route::get('/quotes',           [HomeController::class, 'quotes']);
 
 Route::get('/suppliers',        [HomeController::class, 'suppliers']);
-Route::get('/buys',             [HomeController::class, 'buys']);
 Route::get('/buys_orders',      [HomeController::class, 'buys_orders']);
 
 Route::get('/storages',         [HomeController::class, 'storages']);
@@ -34,6 +34,7 @@ Route::get('/storage_config',   [HomeController::class, 'storage_config']);
 
 Route::resource('products', ProductsController::class);
 Route::resource('suppliers', SuppliersController::class);
+Route::resource('buys', BuysController::class);
 
 // routes/web.php
 Route::post('/procesar-formulario', [FormController::class, 'procesar_login'])->name('procesar-formulario');
