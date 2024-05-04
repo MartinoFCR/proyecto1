@@ -117,21 +117,17 @@
 
                 <h3 class="content__info">Bienvenido</h3>
 
-                <div class="center-content">
-                    <div class="content__inputs">
-                        <div class="inputs__group">
-                            <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
-                            <label class="inputs__label" for="">Buscar</label>
-                        </div>
-                        <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
-                        <a href="{{ url('buys/create') }}">
-                            <input type="submit" class="inputs__buttom" value="CREAR COMPRAR">
-                        </a>
-                    </div>
+                <div class="d-flex justify-content-between">
+                    <h4 class="card-title">Registro de Compra</h4>
                 </div>
+
+                <form action="{{ url('/buys') }}" method="post">
+                    @csrf
+                    @include('menu/buys/buys_form', ['modo'=>'Registrar'])
+                </form>
+                <button type="submit" class="btn btn-primary">Registrar</button>
+                <a href="{{ url('buys') }}" class="btn btn-primary">Cancelar</a>
             </div>
-
-
         </div>
     </div>
 

@@ -65,7 +65,7 @@
                     </a>
                     <ul class="list__submenu">
                         <li><a href="{{ url('suppliers') }}">Proveedores</a></li>
-                        <li><a href="/buys">Compras</a></li>
+                        <li><a href="{{ url('buys') }}">Compras</a></li>
                         <li><a href="/buys_orders">Orden de compra</a></li>
                     </ul>
                 </li>
