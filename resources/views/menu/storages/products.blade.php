@@ -26,16 +26,6 @@
 
 
 
-    <div class="layout">
-
-        <div class="layout__left">
-            <div class="left__title">
-                <h1 class="title_menu">MENÚ</h1>
-            </div>
-
-            <div class="left__container">
-                <ul class="list__content">
-                    <!--
 
 <div class="layout">
     <div class="layout__left">
@@ -48,77 +38,6 @@
 
 
             <ul class="dropdown" id="menu">
-                <!--
-
-                <li>
-                    
-                    <div class="left__search-bar">
-                        <input type="text">
-                    </div>
-                    
-                </li>
-                -->
-
-
-
-                    <li>
-                        <a class="option__link" href="">
-                            <i class="icono"></i>
-                            <span class="option__title">ADMINISTRACIÓN</span>
-                        </a>
-                        <ul class="list__submenu">
-                            <li><a href="#">Ajuste de empresa</a></li>
-                            <li><a href="#">Categorias de prendas</a></li>
-                            <li><a href="#">Sucursales</a></li>
-                            <li><a href="#">Empleados</a></li>
-                            <li><a href="#">Perfiles de usuario</a></li>
-                            <li><a href="#">Usuarios</a></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a class="option__link" href="">
-                            <i class="icono"></i>
-                            <span class="option__title">VENTAS</span>
-                        </a>
-                        <ul class="list__submenu">
-                            <li><a href="#">Factura</a></li>
-                            <li><a href="#">Clientes</a></li>
-                            <li><a href="#">Cotizacion</a></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a class="option__link" href="">
-                            <i class="icono"></i>
-                            <span class="option__title">COMPRAS</span>
-                        </a>
-                        <ul class="list__submenu">
-                            <li><a href="#">Proveedores</a></li>
-                            <li><a href="#">Compras</a></li>
-                            <li><a href="#">Orden de compra</a></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a class="option__link" href="">
-                            <i class="icono"></i>
-                            <span class="option__title">ALMACEN</span>
-                        </a>
-                        <ul class="list__submenu">
-                            <li><a href="#">Almacenes</a></li>
-                            <li><a href="#">Kardex</a></li>
-                            <li><a href="#">Traslados</a></li>
-                            <li><a href="#">Ajustes</a></li>
-                            <li><a href="#">Articulos</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <li>
-                    <a class="option__link" href="">
-                        <i class="icono"></i>
-                        <span class="option__title">ADMINISTRACIÓN</span>
 
                 <li class="dropdown__list">
                     <a class="dropdown__link" href="">
@@ -129,7 +48,7 @@
                         <input type="checkbox" class="dropdown__check">
 
                     </a>
-                    
+
                     <div class="dropdown__content">
                         <ul class="dropdown__sub">
                             <li class="dropdown__li">
@@ -162,7 +81,7 @@
 
                         <input type="checkbox" class="dropdown__check">
                     </a>
-                    
+
                     <div class="dropdown__content">
                         <ul class="dropdown__sub">
                             <li class="dropdown__li">
@@ -240,35 +159,25 @@
                 <div class="header__name">
                     <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
                 </div>
-            </div>
 
-            <div class="layout__right">
-                <div class="layout__header">
-                    <div class="header__content">
-                        <div class="header__user">
-                            <div class="user__container-img">
-                                <img class="user__img" src="{{ asset('assets/img/user.jpg') }}" alt="Foto del Usuario">
-                            </div>
-
-                            <h6 class="user__name">Usuario</h6>
+                <div class="header__content">
+                    <div class="header__user">
+                        <div class="user__container-img">
+                            <img class="user__img" src="{{ asset('assets/img/user.jpg') }}" alt="Foto del Usuario">
                         </div>
 
-
-                        <div class="header__log-out">
-                            <a href="#" class="log-out__link">
-                                <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
-                            </a>
-                            <h6 class="log-out__name">Cerrar Sesion</h6>
-                        </div>
+                        <h6 class="user__name">Usuario</h6>
                     </div>
 
-                <div class="header__log-out">
-                    <a href="/" class="log-out__link">
-                        <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
-                    </a>
-                    <h6 class="log-out__name">Cerrar Sesion</h6>
-
+                    <div class="header__log-out">
+                        <a href="/" class="log-out__link">
+                            <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
+                        </a>
+                        <h6 class="log-out__name">Cerrar Sesion</h6>
+                    </div>
                 </div>
+            </div>
+
 
                 <div class="layout__content">
 
@@ -285,7 +194,7 @@
                             <a href="{{ url('products/create') }}">
                                 <input type="submit" class="inputs__buttom" value="+ CREAR ARTICULO">
                             </a>
-                            
+
                         </div>
                         @if(Session::has('mensaje'))
                         {{ Session::get('mensaje') }}
@@ -314,10 +223,6 @@
                                         <td>{{ $product->stock_product }}</td>
                                         <td>
 
-            <div class="center-content">
-                <!-- AQUI EMPIEZA LO QUE CAMBIA EN CADA VISTA-->
-
-
                                             <a href="{{ url('/products/'.$product->id.'/edit') }}" class="btn btn-warning">
                                                 Editar
                                             </a>
@@ -340,27 +245,6 @@
 
             </div>
         </div>
-
-        <div class="footer">
-            <div class="footer__info">
-                <h3 class="info__text">Pie de página</h3>
-            </div>
-        </div>
-        <script>
-            function toggleSubMenu(option__submenuId) {
-                let option__submenu = document.getElementById(option__submenuId);
-                if (option__submenu.style.display === "block") {
-                    option__submenu.style.display = "none";
-                } else {
-                    option__submenu.style.display = "block";
-                }
-            }
-        </script>
-
-                <div class="content__data">
-
-                </div>
-
                 <!-- AQUI TERMINA LO QUE CAMBIA EN CADA VISTA-->
             </div>
         </div>
