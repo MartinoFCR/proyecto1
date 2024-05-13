@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/reset.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/styles.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/scroll.css') }}">
+
 <script src="https://kit.fontawesome.com/6dd0aa23c2.js" crossorigin="anonymous"></script>
 <!--<script src="https://cdn.tailwindcss.com"></script>-->
 </head>
@@ -182,40 +183,42 @@
 
                         </div>
                         @if(Session::has('mensaje'))
-                        {{ Session::get('mensaje') }}
+                        <div class="alert-success">
+                            {{ Session::get('mensaje') }}
+                        </div>
                         @endif
                         <div class="content__data">
-                            <table class="table">
-                                <thead>
+                            <table class="products__table">
+                                <thead class="products__th">
                                     <tr>
-                                        <th scope="col">Id Producto</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Tipo de Producto</th>
-                                        <th scope="col">Precio Unitario</th>
-                                        <th scope="col">Precio de Venta</th>
-                                        <th scope="col">Stock</th>
-                                        <th scope="col">Acciones</th>
+                                        <th class="th__title" scope="col">Id Producto</th>
+                                        <th class="th__title" scope="col">Nombre</th>
+                                        <th class="th__title" scope="col">Tipo de Producto</th>
+                                        <th class="th__title" scope="col">Precio Unitario</th>
+                                        <th class="th__title" scope="col">Precio de Venta</th>
+                                        <th class="th__title" scope="col">Stock</th>
+                                        <th class="th__title" scope="col">Acciones</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody class="products__td">
                                     @foreach($products as $product)
                                     <tr>
-                                        <td>{{ $product->id }}</td>
-                                        <td>{{ $product->name_product }}</td>
-                                        <td>{{ $product->type_product }}</td>
-                                        <td>{{ $product->unit_price }}</td>
-                                        <td>{{ $product->sale_price }}</td>
-                                        <td>{{ $product->stock_product }}</td>
-                                        <td>
+                                        <td class="td__data products-id">{{ $product->id }}</td>
+                                        <td class="td__data products-name">{{ $product->name_product }}</td>
+                                        <td class="td__data products-type">{{ $product->type_product }}</td>
+                                        <td class="td__data products-unit">{{ $product->unit_price }}</td>
+                                        <td class="td__data products-sale">{{ $product->sale_price }}</td>
+                                        <td class="td__data products-stock">{{ $product->stock_product }}</td>
+                                        <td class="td__data products-buttons">
 
                                             <a href="{{ url('/products/'.$product->id.'/edit') }}" class="btn btn-warning">
-                                                Editar
+                                                <i class="fa-solid fa-pen-to-square"></i>
                                             </a>
 
                                             <form action="{{ url('/products/'.$product->id) }}" class="d-inline" method="post">
                                                 @csrf
                                                 {{ method_field('DELETE') }}
-                                                <input class="btn btn-danger" type="submit" onclick="return confirm('¿Quieres Eliminar el producto?')" value="Borrar">
+                                                <i class="delete__icon fa-solid fa-trash-can" onclick="return confirm('¿Quieres Eliminar el producto?')"></i>
                                             </form>
                                         </td>
                                     </tr>

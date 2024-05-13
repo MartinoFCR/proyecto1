@@ -74,8 +74,6 @@ body {
     color: var(--color-principal);
 }
 /*DROPDOWN*/
-
-
 .dropdown__list{
     list-style: none;
 }
@@ -331,5 +329,136 @@ body {
     margin: 3rem 4rem;
     flex-basis: 80%;
     height: 100%;
+}
 
+/*TABLAS*/
+.products__table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Color de fondo de las filas impares */
+}
+.products__table{
+    border-collapse: collapse;
+    width: 100%;
+    color: var(--color-title);
+}
+.products__th{
+    background-color: var(--color-secundario);
+    border: 0px 1px solid var(--color-secundario);
+    font-size: 2.1rem;
+}
+.products__td{
+    font-size: 2rem;
+}
+.td__data{
+    border: 0px 1px solid var(--color-secundario);
+    padding: 0.5rem;
+}
+.products-id{
+    width: 10%;
+    text-align: center;
+    padding: 0;
+}
+.products-name{
+    width: 25%;
+}
+.products-type{
+    width: 15%;
+}
+.products-sale,
+.products-unit{
+    width: 15%;
+    text-align: right;
+}
+
+.products-stock{
+    width: 10%;
+    text-align: right;
+}
+.products-buttons{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+
+.delete__icon{
+    cursor: pointer;
+}
+
+/*FORMS*/
+.form__group {
+    width: 42rem;
+    position: relative;
+}
+
+.form__input {
+    position: relative;
+    width: 30rem;
+    height: 4.2rem;
+    display: block;
+    padding: 1rem 1.2rem;
+    border: 0.2rem solid var(--color-border-reviews);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    outline: none;
+    box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, .1);
+    background-color: var(--color-principal);
+    line-height: 2.1rem;
+}
+
+/*EFECTO DEL FORMULARIO*/
+.alert-danger{
+    color: red;
+}
+.alert-success{
+    color: green;
+}
+.form__input:focus {
+    border: 0.2rem solid var(--color-terciario);
+}
+
+.form__label {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    z-index: 1;
+    color: var(--color-company);
+    transition: all 300ms ease-in-out;
+    pointer-events: none;
+    /*Esto hace que el label no interfiera al dar click en el input*/
+}
+
+.form__input:focus~label,
+/*El simbolo ~ permite que se afecte el estilo del elemento siguiente al ejecer un efecto sobre otro element*/
+.form__input:not(:placeholder-shown)~label {
+    /*Esto hace que si el placeholder NO se muestra, es decir, si el campo ya se llenó, entonces que el label siga arriba y no vuelva a su posicion inicial*/
+    top: -2rem;
+    left: 0;
+    z-index: 1;
+    font-size: 1.3rem;
+    color: var(--color-terciario);
+}
+.form__input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form__input::-moz-placeholder {
+    color: transparent;
+}
+.form__buttom {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border: 0.2rem solid var(--color-terciario);
+    color: var(--color-title);
+    background-color: var(--color-principal);
+    border-radius: 3rem;
+    box-shadow: 0 1rem 1rem -0.8rem rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form__buttom:hover {
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+}
+.return__icon{
+    font-size: 5rem;
 }
