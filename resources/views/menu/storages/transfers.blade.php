@@ -20,19 +20,8 @@
         </div>
 
         <div class="left__container">
-            <nav></nav>
-
 
             <ul class="dropdown" id="menu">
-                <!--
-                <li>
-                    
-                    <div class="left__search-bar">
-                        <input type="text">
-                    </div>
-                    
-                </li>
-                -->
 
                 <li class="dropdown__list">
                     <a class="dropdown__link" href="">
@@ -45,12 +34,12 @@
                     
                     <div class="dropdown__content">
                         <ul class="dropdown__sub">
-                            <li class="dropdown__li">
+                            {{-- <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
                             </li>
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/categories">Categorias de prendas</a>
-                            </li>
+                            </li> --}}
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/offices">Sucursales</a>
                             </li>
@@ -84,9 +73,9 @@
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/clients">Clientes</a>
                             </li>
-                            <li class="dropdown__li">
+                            {{-- <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/quotes">Cotizacion</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </li>
@@ -108,9 +97,9 @@
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/buys">Compras</a>
                             </li>
-                            <li class="dropdown__li">
+                            {{-- <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </li>
@@ -129,15 +118,15 @@
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/storages">Almacenes</a>
                             </li>
-                            <li class="dropdown__li">
+                            {{-- <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/kardex">Kardex</a>
-                            </li>
+                            </li> --}}
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/transfers">Traslados</a>
                             </li>
-                            <li class="dropdown__li">
+                            {{-- <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
-                            </li>
+                            </li> --}}
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/products">Articulos</a>
                             </li>
