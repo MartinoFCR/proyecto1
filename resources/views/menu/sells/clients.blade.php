@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home</title>
-<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/reset.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/styles.css') }}">
-<script src="https://kit.fontawesome.com/6dd0aa23c2.js" crossorigin="anonymous"></script>
-<!--<script src="https://cdn.tailwindcss.com"></script>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/reset.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/styles.css') }}">
+    <script src="https://kit.fontawesome.com/6dd0aa23c2.js" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
 </head>
+
 <body>
 
 
-<div class="layout">
+    <div class="layout">
 
-    <div class="layout__left">
-        <div class="left__title">
-            <h1 class="title_menu">MENÚ</h1>
-        </div>
+        <div class="layout__left">
+            <div class="left__title">
+                <h1 class="title_menu">MENÚ</h1>
+            </div>
 
         <div class="left__container">
 
@@ -137,74 +139,111 @@
         </div>
     </div>
 
-    <div class="layout__right">
-        <div class="layout__header">
-            <div class="header__name">
-                <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
-            </div>
+        <div class="layout__right">
+            <div class="layout__header">
+                <div class="header__name">
+                    <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
+                </div>
 
-            <div class="header__content">
-                <div class="header__user">
-                    <div class="user__container-img">
-                        <img class="user__img" src="{{ asset('assets/img/user.jpg') }}" alt="Foto del Usuario">
+                <div class="header__content">
+                    <div class="header__user">
+                        <div class="user__container-img">
+                            <img class="user__img" src="{{ asset('assets/img/user.jpg') }}" alt="Foto del Usuario">
+                        </div>
+
+                        <h6 class="user__name">Usuario</h6>
                     </div>
 
-                    <h6 class="user__name">Usuario</h6>
-                </div>
-
-                <div class="header__log-out">
-                    <a href="/" class="log-out__link">
-                        <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
-                    </a>
-                    <h6 class="log-out__name">Cerrar Sesion</h6>
-                </div>
-            </div>
-        </div>
-
-        <div class="layout__content">
-
-            <h3 class="content__info">Ventas / Cliente</h3>
-
-            <div class="center-content">
-    <!-- AQUI EMPIEZA LO QUE CAMBIA EN CADA VISTA-->
-
-                <div class="content__inputs">
-                    <div class="inputs__group">
-                        <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
-                        <label class="inputs__label" for="">Buscar</label>
+                    <div class="header__log-out">
+                        <a href="/" class="log-out__link">
+                            <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
+                        </a>
+                        <h6 class="log-out__name">Cerrar Sesion</h6>
                     </div>
-                    <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
-
-                    <input type="submit" class="inputs__buttom" value="+ CREAR CLIENTE">
                 </div>
-
-                <div class="content__data">
-
-                </div>
-
-        <!-- AQUI TERMINA LO QUE CAMBIA EN CADA VISTA-->
             </div>
+
+            <div class="layout__content">
+
+                <h3 class="content__info">Ventas / Cliente</h3>
+
+                <div class="center-content">
+                    <!-- AQUI EMPIEZA LO QUE CAMBIA EN CADA VISTA-->
+
+                    <div class="content__inputs">
+                        <div class="inputs__group">
+                            <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
+                            <label class="inputs__label" for="">Buscar</label>
+                        </div>
+                        <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
+                        <a href="{{ url('clients/create') }}">
+                            <input type="submit" class="inputs__buttom" value="+ CREAR CLIENTE">
+                        </a>
+                    </div>
+
+                    <div class="content__data">
+                        @if(Session::has('mensaje'))
+                        {{ Session::get('mensaje') }}
+                        @endif
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Cedula</th>
+                                    <th>Nombre</th>
+                                    <th>Apellidos</th>
+                                    <th>Telefono</th>
+                                    <th>Ciudad</th>
+                                    <th>Fecha de nacimiento</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($customers as $client)
+                                <tr>
+                                    <td>{{ $client->id }}</td>
+                                    <td>{{ $client->name_customer }}</td>
+                                    <td>{{ $client->lastname_customer }}</td>
+                                    <td>{{ $client->phone }}</td>
+                                    <td>{{ $client->city }}</td>
+                                    <td>{{ $client->date }}</td>
+                                    <td>
+                                        <a href="{{ url('clients/'.$client->id.'/edit') }}"><i class="fa-solid fa-pencil"></i></a>
+                                        <form action="{{ url('/clients/'.$client->id) }}" class="d-inline" method="post">
+                                            @csrf
+                                            {{ method_field('DELETE') }}
+                                            <input class="btn btn-danger" type="submit" onclick="return confirm('¿Quieres Eliminar el Cliente?')" value="Borrar">
+                                        </form>
+                                    </td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+
+
         </div>
-
-
     </div>
-</div>
 
-<div class="footer">
-    <div class="footer__info">
-        <h3 class="info__text">Pie de página</h3>
+    <div class="footer">
+        <div class="footer__info">
+            <h3 class="info__text">Pie de página</h3>
+        </div>
     </div>
-</div>
-<script>
-    function toggleSubMenu(option__submenuId) {
-        let option__submenu = document.getElementById(option__submenuId);
-        if (option__submenu.style.display === "block") {
-            option__submenu.style.display = "none";
-        } else {
-            option__submenu.style.display = "block";
+    <script>
+        function toggleSubMenu(option__submenuId) {
+            let option__submenu = document.getElementById(option__submenuId);
+            if (option__submenu.style.display === "block") {
+                option__submenu.style.display = "none";
+            } else {
+                option__submenu.style.display = "block";
+            }
         }
-    }
-</script>
+    </script>
 
 </body>
+
 </html>

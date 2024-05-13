@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\employee;
+use App\Models\buys_orders;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class EmployeeController extends Controller
+class BuysOrdersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -35,7 +34,7 @@ class EmployeeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(employee $employee)
+    public function show(buys_orders $buys_orders)
     {
         //
     }
@@ -43,7 +42,7 @@ class EmployeeController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(employee $employee)
+    public function edit(buys_orders $buys_orders)
     {
         //
     }
@@ -51,7 +50,7 @@ class EmployeeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, employee $employee)
+    public function update(Request $request, buys_orders $buys_orders)
     {
         //
     }
@@ -59,7 +58,7 @@ class EmployeeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(employee $employee)
+    public function destroy(buys_orders $buys_orders)
     {
         //
     }
