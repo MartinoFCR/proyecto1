@@ -13,7 +13,6 @@
 
 <body>
 
-
     <div class="layout">
 
         <div class="layout__left">
@@ -24,17 +23,7 @@
             <div class="left__container">
                 <nav></nav>
 
-
                 <ul class="dropdown" id="menu">
-                    <!--
-                <li>
-                    
-                    <div class="left__search-bar">
-                        <input type="text">
-                    </div>
-                    
-                </li>
-                -->
 
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
