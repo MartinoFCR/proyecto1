@@ -166,10 +166,7 @@
             <h3 class="content__info">Bienvenido</h3>
 
             <div class="center-content">
-    <!-- AQUI EMPIEZA LO QUE CAMBIA EN CADA VISTA-->
 
-
-        <!-- AQUI TERMINA LO QUE CAMBIA EN CADA VISTA-->
             </div>
         </div>
 

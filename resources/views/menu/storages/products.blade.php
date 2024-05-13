@@ -2,15 +2,6 @@
 <html lang="es">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/reset.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/styles.css') }}">
-    <script src="https://kit.fontawesome.com/6dd0aa23c2.js" crossorigin="anonymous"></script>
-    <!--<script src="https://cdn.tailwindcss.com"></script>-->
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home</title>
@@ -19,13 +10,9 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/scroll.css') }}">
 <script src="https://kit.fontawesome.com/6dd0aa23c2.js" crossorigin="anonymous"></script>
 <!--<script src="https://cdn.tailwindcss.com"></script>-->
-
 </head>
 
 <body>
-
-
-
 
 <div class="layout">
     <div class="layout__left">
@@ -243,19 +230,8 @@
 
             </div>
         </div>
-                <!-- AQUI TERMINA LO QUE CAMBIA EN CADA VISTA-->
-            </div>
-        </div>
     </div>
 </div>
-
-<div class="footer">
-    <div class="footer__info">
-        <h3 class="info__text">Pie de página</h3>
-    </div>
-</div>
-
-
 </body>
 
 </html>
