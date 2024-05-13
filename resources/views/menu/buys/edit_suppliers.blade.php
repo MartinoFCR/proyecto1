@@ -15,13 +15,13 @@
     <div class="layout">
         <div class="layout__left">
             <div class="left__title">
-                <h1 class="title_menu">MENÚ</h1>
+                <a href="/home">
+                    <h1 class="title_menu">MENÚ</h1>
+                </a>
             </div>
 
             <div class="left__container">
-
                 <ul class="dropdown" id="menu">
-
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-user-tie"></i>

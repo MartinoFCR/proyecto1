@@ -18,7 +18,9 @@
 
         <div class="layout__left">
             <div class="left__title">
-                <h1 class="title_menu">MENÚ</h1>
+                <a href="/home">
+                    <h1 class="title_menu">MENÚ</h1>
+                </a>
             </div>
 
             <div class="left__container">
