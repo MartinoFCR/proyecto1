@@ -29,9 +29,7 @@
                         <i class="dropdown__icon fa-solid fa-user-tie"></i>
                         <span class="dropdown__span">ADMINISTRACIÓN</span>
                         <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-
                         <input type="checkbox" class="dropdown__check">
-
                     </a>
 
                     <div class="dropdown__content">
@@ -135,11 +133,11 @@
                         </ul>
                     </div>
                 </li>
-                </ul>
-            </div>
+            </ul>
         </div>
+    </div>
 
-        <div class="layout__right">
+    <div class="layout__right">
             <div class="layout__header">
                 <div class="header__name">
                     <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
@@ -225,13 +223,9 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </div>
-</div>
 </body>
 
 </html>

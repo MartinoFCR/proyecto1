@@ -11,7 +11,6 @@
 </head>
 <body>
 
-
 <div class="layout">
 
     <div class="layout__left">
@@ -20,15 +19,12 @@
         </div>
 
         <div class="left__container">
-
             <ul class="dropdown" id="menu">
-
                 <li class="dropdown__list">
                     <a class="dropdown__link" href="">
                         <i class="dropdown__icon fa-solid fa-user-tie"></i>
                         <span class="dropdown__span">ADMINISTRACIÓN</span>
                         <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-
                         <input type="checkbox" class="dropdown__check">
                     </a>
                     
@@ -85,7 +81,6 @@
                         <i class="dropdown__icon fa-solid fa-cart-flatbed"></i>
                         <span class="dropdown__span">COMPRAS</span>
                         <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-
                         <input type="checkbox" class="dropdown__check">
                     </a>
 
@@ -109,7 +104,6 @@
                         <i class="dropdown__icon fa-solid fa-shop"></i>
                         <span class="dropdown__span">ALMACEN</span>
                         <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-
                         <input type="checkbox" class="dropdown__check">
                     </a>
 
@@ -162,36 +156,17 @@
         </div>
 
         <div class="layout__content">
-
             <h3 class="content__info">Bienvenido</h3>
 
             <div class="center-content">
-    <!-- AQUI EMPIEZA LO QUE CAMBIA EN CADA VISTA-->
+                <!-- AQUI EMPIEZA LO QUE CAMBIA EN CADA VISTA-->
 
 
-        <!-- AQUI TERMINA LO QUE CAMBIA EN CADA VISTA-->
+                <!-- AQUI TERMINA LO QUE CAMBIA EN CADA VISTA-->
             </div>
         </div>
-
-
     </div>
 </div>
-
-<div class="footer">
-    <div class="footer__info">
-        <h3 class="info__text">Pie de página</h3>
-    </div>
-</div>
-<script>
-    function toggleSubMenu(option__submenuId) {
-        let option__submenu = document.getElementById(option__submenuId);
-        if (option__submenu.style.display === "block") {
-            option__submenu.style.display = "none";
-        } else {
-            option__submenu.style.display = "block";
-        }
-    }
-</script>
 
 </body>
 </html>

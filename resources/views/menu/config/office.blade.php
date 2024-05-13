@@ -165,32 +165,13 @@
             <h3 class="content__info">Bienvenido</h3>
 
             <div class="center-content">
-    <!-- AQUI EMPIEZA LO QUE CAMBIA EN CADA VISTA-->
 
-
-        <!-- AQUI TERMINA LO QUE CAMBIA EN CADA VISTA-->
             </div>
         </div>
 
 
     </div>
 </div>
-
-<div class="footer">
-    <div class="footer__info">
-        <h3 class="info__text">Pie de página</h3>
-    </div>
-</div>
-<script>
-    function toggleSubMenu(option__submenuId) {
-        let option__submenu = document.getElementById(option__submenuId);
-        if (option__submenu.style.display === "block") {
-            option__submenu.style.display = "none";
-        } else {
-            option__submenu.style.display = "block";
-        }
-    }
-</script>
 
 </body>
 </html>
