@@ -2,7 +2,6 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -10,20 +9,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/styles.css') }}">
     <script src="https://kit.fontawesome.com/6dd0aa23c2.js" crossorigin="anonymous"></script>
     <!--<script src="https://cdn.tailwindcss.com"></script>-->
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/reset.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/styles.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/scroll.css') }}">
-    <script src="https://kit.fontawesome.com/6dd0aa23c2.js" crossorigin="anonymous"></script>
-    <!--<script src="https://cdn.tailwindcss.com"></script>-->
-
 </head>
 
 <body>
-
 
 
     <div class="layout">
@@ -34,7 +22,20 @@
             </div>
 
             <div class="left__container">
-                <ul class="list__content">
+                <nav></nav>
+
+
+                <ul class="dropdown" id="menu">
+                    <!--
+                <li>
+                    
+                    <div class="left__search-bar">
+                        <input type="text">
+                    </div>
+                    
+                </li>
+                -->
+
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-user-tie"></i>
@@ -42,7 +43,6 @@
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
 
                             <input type="checkbox" class="dropdown__check">
-
                         </a>
 
                         <div class="dropdown__content">
@@ -84,7 +84,7 @@
                                     <a class="dropdown__anchor" href="/bills">Factura</a>
                                 </li>
                                 <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/clients">Clientes</a>
+                                    <a class="dropdown__anchor" href="{{ url('clients') }}">Clientes</a>
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/quotes">Cotizacion</a>
@@ -105,7 +105,7 @@
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/suppliers">Proveedores</a>
+                                    <a class="dropdown__anchor" href="{{ url('suppliers') }}">Proveedores</a>
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/buys">Compras</a>
@@ -141,7 +141,7 @@
                                     <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
                                 </li>
                                 <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/products">Articulos</a>
+                                    <a class="dropdown__anchor" href="{{ url('products') }}">Articulos</a>
                                 </li>
                             </ul>
                         </div>
@@ -155,23 +155,29 @@
                 <div class="header__name">
                     <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
                 </div>
-                <div class="header__user">
-                    <div class="user__container-img">
-                        <img class="user__img" src="{{ asset('assets/img/user.jpg') }}" alt="Foto del Usuario">
+
+                <div class="header__content">
+                    <div class="header__user">
+                        <div class="user__container-img">
+                            <img class="user__img" src="{{ asset('assets/img/user.jpg') }}" alt="Foto del Usuario">
+                        </div>
+
+                        <h6 class="user__name">Usuario</h6>
                     </div>
 
-                    <h6 class="user__name">Usuario</h6>
-                </div>
-                <div class="header__log-out">
-                    <a href="#" class="log-out__link">
-                        <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
-                    </a>
-                    <h6 class="log-out__name">Cerrar Sesion</h6>
+                    <div class="header__log-out">
+                        <a href="/" class="log-out__link">
+                            <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
+                        </a>
+                        <h6 class="log-out__name">Cerrar Sesion</h6>
+                    </div>
                 </div>
             </div>
-                <h3 class="content__info">Almacen / Articulos</h3>
-            <div class="layout__right">
-                <div class="layout__header">
+
+            <div class="layout__content">
+
+                <<h3 class="content__info">Almacen / Articulos</h3>
+
                     <div class="center-content">
                         <div class="content__inputs">
                             <div class="inputs__group">
@@ -181,7 +187,7 @@
 
                             <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
                             <a href="{{ url('products/create') }}">
-                                <input type="submit" class="inputs__buttom" value="+ CREAR ARTICULO">
+                                <input type="submit" class="inputs__buttom" value="CREAR ARTICULO">
                             </a>
 
                         </div>
@@ -228,35 +234,16 @@
                             </table>
                         </div>
                     </div>
-                </div>
+
 
             </div>
-            <script>
-                function toggleSubMenu(option__submenuId) {
-                    let option__submenu = document.getElementById(option__submenuId);
-                    if (option__submenu.style.display === "block") {
-                        option__submenu.style.display = "none";
-                    } else {
-                        option__submenu.style.display = "block";
-                    }
-                }
-            </script>
+        </div>
 
-            <div class="content__data">
-
+        <div class="footer">
+            <div class="footer__info">
+                <h3 class="info__text">Pie de página</h3>
             </div>
-
-            <!-- AQUI TERMINA LO QUE CAMBIA EN CADA VISTA-->
         </div>
-    </div>
-    </div>
-    </div>
-
-    <div class="footer">
-        <div class="footer__info">
-            <h3 class="info__text">Pie de página</h3>
-        </div>
-    </div>
 
 
 </body>

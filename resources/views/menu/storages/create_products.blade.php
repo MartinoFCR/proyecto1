@@ -22,7 +22,10 @@
             </div>
 
             <div class="left__container">
-                <ul class="list__content">
+                <nav></nav>
+
+
+                <ul class="dropdown" id="menu">
                     <!--
                 <li>
                     
@@ -33,113 +36,116 @@
                 </li>
                 -->
 
+                    <li class="dropdown__list">
+                        <a class="dropdown__link" href="">
+                            <i class="dropdown__icon fa-solid fa-user-tie"></i>
+                            <span class="dropdown__span">ADMINISTRACIÓN</span>
+                            <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
 
-                    <li>
-                        <a class="option__link" href="">
-                            <i class="icono"></i>
-                            <span class="option__title">ADMINISTRACIÓN</span>
+                            <input type="checkbox" class="dropdown__check">
                         </a>
-                        <ul class="list__submenu">
-                            <li><a href="#">Ajuste de empresa</a></li>
-                            <li><a href="#">Categorias de prendas</a></li>
-                            <li><a href="#">Sucursales</a></li>
-                            <li><a href="#">Empleados</a></li>
-                            <li><a href="#">Perfiles de usuario</a></li>
-                            <li><a href="#">Usuarios</a></li>
-                        </ul>
+
+                        <div class="dropdown__content">
+                            <ul class="dropdown__sub">
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/categories">Categorias de prendas</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/offices">Sucursales</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/employees">Empleados</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/user_profile">Perfiles de usuario</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/users">Usuarios</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
 
-                    <li>
-                        <a class="option__link" href="">
-                            <i class="icono"></i>
-                            <span class="option__title">VENTAS</span>
+                    <li class="dropdown__list">
+                        <a class="dropdown__link" href="">
+                            <i class="dropdown__icon fa-solid fa-cart-shopping"></i>
+                            <span class="dropdown__span">VENTAS</span>
+                            <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
+
+                            <input type="checkbox" class="dropdown__check">
                         </a>
-                        <ul class="list__submenu">
-                            <li><a href="#">Factura</a></li>
-                            <li><a href="#">Clientes</a></li>
-                            <li><a href="#">Cotizacion</a></li>
-                        </ul>
+
+                        <div class="dropdown__content">
+                            <ul class="dropdown__sub">
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/bills">Factura</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="{{ url('clients') }}">Clientes</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/quotes">Cotizacion</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
 
-                    <li>
-                        <a class="option__link" href="">
-                            <i class="icono"></i>
-                            <span class="option__title">COMPRAS</span>
+                    <li class="dropdown__list">
+                        <a class="dropdown__link" href="">
+                            <i class="dropdown__icon fa-solid fa-cart-flatbed"></i>
+                            <span class="dropdown__span">COMPRAS</span>
+                            <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
+
+                            <input type="checkbox" class="dropdown__check">
                         </a>
-                        <ul class="list__submenu">
-                            <li><a href="#">Proveedores</a></li>
-                            <li><a href="#">Compras</a></li>
-                            <li><a href="#">Orden de compra</a></li>
-                        </ul>
+
+                        <div class="dropdown__content">
+                            <ul class="dropdown__sub">
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="{{ url('suppliers') }}">Proveedores</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/buys">Compras</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
 
-                    <li>
-                        <a class="option__link" href="">
-                            <i class="icono"></i>
-                            <span class="option__title">ALMACEN</span>
+                    <li class="dropdown__list">
+                        <a class="dropdown__link" href="">
+                            <i class="dropdown__icon fa-solid fa-shop"></i>
+                            <span class="dropdown__span">ALMACEN</span>
+                            <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
+
+                            <input type="checkbox" class="dropdown__check">
                         </a>
-                        <ul class="list__submenu">
-                            <li><a href="#">Almacenes</a></li>
-                            <li><a href="#">Kardex</a></li>
-                            <li><a href="#">Traslados</a></li>
-                            <li><a href="#">Ajustes</a></li>
-                            <li><a href="#">Articulos</a></li>
-                        </ul>
+
+                        <div class="dropdown__content">
+                            <ul class="dropdown__sub">
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/storages">Almacenes</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/kardex">Kardex</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/transfers">Traslados</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="{{ url('products') }}">Articulos</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                </ul>
-
-                <li>
-                    <a class="option__link" href="">
-                        <i class="icono"></i>
-                        <span class="option__title">ADMINISTRACIÓN</span>
-                    </a>
-                    <ul class="list__submenu">
-                        <li><a href="/config">Ajuste de empresa</a></li>
-                        <li><a href="/categories">Categorias de prendas</a></li>
-                        <li><a href="/offices">Sucursales</a></li>
-                        <li><a href="/employees">Empleados</a></li>
-                        <li><a href="/user_profile">Perfiles de usuario</a></li>
-                        <li><a href="/users">Usuarios</a></li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a class="option__link" href="">
-                        <i class="icono"></i>
-                        <span class="option__title">VENTAS</span>
-                    </a>
-                    <ul class="list__submenu">
-                        <li><a href="/bills">Factura</a></li>
-                        <li><a href="/clients">Clientes</a></li>
-                        <li><a href="/quotes">Cotizacion</a></li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a class="option__link" href="">
-                        <i class="icono"></i>
-                        <span class="option__title">COMPRAS</span>
-                    </a>
-                    <ul class="list__submenu">
-                        <li><a href="/suppliers">Proveedores</a></li>
-                        <li><a href="/buys">Compras</a></li>
-                        <li><a href="/buys_orders">Orden de compra</a></li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a class="option__link" href="">
-                        <i class="icono"></i>
-                        <span class="option__title">ALMACEN</span>
-                    </a>
-                    <ul class="list__submenu">
-                        <li><a href="/storages">Almacenes</a></li>
-                        <li><a href="/kardex">Kardex</a></li>
-                        <li><a href="/transfers">Traslados</a></li>
-                        <li><a href="/storage_config">Ajustes</a></li>
-                        <li><a href="/products">Articulos</a></li>
-                    </ul>
-                </li>
                 </ul>
             </div>
         </div>
@@ -149,62 +155,44 @@
                 <div class="header__name">
                     <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
                 </div>
-            </div>
 
-            <div class="layout__right">
-                <div class="layout__header">
-                    <div class="header__content">
-                        <div class="header__user">
-                            <div class="user__container-img">
-                                <img class="user__img" src="{{ asset('assets/img/user.jpg') }}" alt="Foto del Usuario">
-                            </div>
-
-                            <h6 class="user__name">Usuario</h6>
+                <div class="header__content">
+                    <div class="header__user">
+                        <div class="user__container-img">
+                            <img class="user__img" src="{{ asset('assets/img/user.jpg') }}" alt="Foto del Usuario">
                         </div>
 
-                        <div class="header__log-out">
-                            <a href="#" class="log-out__link">
-                                <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
-                            </a>
-                            <h6 class="log-out__name">Cerrar Sesion</h6>
-                        </div>
+                        <h6 class="user__name">Usuario</h6>
+                    </div>
+
+                    <div class="header__log-out">
+                        <a href="/" class="log-out__link">
+                            <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
+                        </a>
+                        <h6 class="log-out__name">Cerrar Sesion</h6>
                     </div>
                 </div>
+            </div>
 
-                <div class="layout__content">
+            <div class="layout__content">
+                <h3 class="content__info">Almacen / Articulos</h3>
+                <div class="center-content">
+                    <form action="{{ url('/products') }}" method="post" enctype="multipart/form-data">
+                        @csrf
+                        @include('menu/storages/form_products', ['modo'=>'Crear'])
 
-                    <h3 class="content__info">Almacen / Articulos</h3>
-
-                    <div class="center-content">
-                        <div class="content__data">
-                            <form action="{{ url('/products') }}" method="post" enctype="multipart/form-data">
-                                @csrf
-                                @include('menu/storages/form_products', ['modo'=>'Crear'])
-                                
-                            </form>
-                        </div>
-                    </div>
+                    </form>
                 </div>
-
-
             </div>
-        </div>
 
-        <div class="footer">
-            <div class="footer__info">
-                <h3 class="info__text">Pie de página</h3>
-            </div>
         </div>
-        <script>
-            function toggleSubMenu(option__submenuId) {
-                let option__submenu = document.getElementById(option__submenuId);
-                if (option__submenu.style.display === "block") {
-                    option__submenu.style.display = "none";
-                } else {
-                    option__submenu.style.display = "block";
-                }
-            }
-        </script>
+    </div>
+
+    <div class="footer">
+        <div class="footer__info">
+            <h3 class="info__text">Pie de página</h3>
+        </div>
+    </div>
 
 </body>
 
