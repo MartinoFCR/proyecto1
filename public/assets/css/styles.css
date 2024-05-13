@@ -340,18 +340,24 @@ body {
     width: 100%;
     color: var(--color-title);
 }
-.products__th{
+.table__th{
     background-color: var(--color-secundario);
     border: 0px 1px solid var(--color-secundario);
     font-size: 2.1rem;
 }
-.products__td{
+.table__td{
     font-size: 2rem;
 }
 .td__data{
     border: 0px 1px solid var(--color-secundario);
     padding: 0.5rem;
 }
+
+.delete__icon{
+    cursor: pointer;
+}
+
+/*TABLA DE PRODUCTOS*/
 .products-id{
     width: 10%;
     text-align: center;
@@ -373,15 +379,42 @@ body {
     width: 10%;
     text-align: right;
 }
-.products-buttons{
+.products-buttoms{
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
 }
 
-.delete__icon{
-    cursor: pointer;
+
+/*TABLA DE clientes*/
+.clients-id{
+    width: 10%;
+    text-align: center;
+    padding: 0;
 }
+.clients-name{
+    width: 20%;
+}
+.clients-lastname{
+    width: 20%;
+}
+.clients-phone,
+.clients-city{
+    width: 15%;
+    text-align: center;
+}
+
+.clients-date{
+    width: 10%;
+    text-align: center;
+}
+.clients-buttoms{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 /*FORMS*/
 .form__group {

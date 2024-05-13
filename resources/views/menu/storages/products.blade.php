@@ -189,7 +189,7 @@
                         @endif
                         <div class="content__data">
                             <table class="products__table">
-                                <thead class="products__th">
+                                <thead class="table__th">
                                     <tr>
                                         <th class="th__title" scope="col">Id Producto</th>
                                         <th class="th__title" scope="col">Nombre</th>
@@ -200,7 +200,7 @@
                                         <th class="th__title" scope="col">Acciones</th>
                                     </tr>
                                 </thead>
-                                <tbody class="products__td">
+                                <tbody class="table__td">
                                     @foreach($products as $product)
                                     <tr>
                                         <td class="td__data products-id">{{ $product->id }}</td>
@@ -209,7 +209,7 @@
                                         <td class="td__data products-unit">{{ $product->unit_price }}</td>
                                         <td class="td__data products-sale">{{ $product->sale_price }}</td>
                                         <td class="td__data products-stock">{{ $product->stock_product }}</td>
-                                        <td class="td__data products-buttons">
+                                        <td class="td__data products-buttoms">
 
                                             <a href="{{ url('/products/'.$product->id.'/edit') }}" class="btn btn-warning">
                                                 <i class="fa-solid fa-pen-to-square"></i>
