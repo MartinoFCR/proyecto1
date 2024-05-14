@@ -41,10 +41,10 @@
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/categories">Categorias de prendas</a>
-                                </li> --}}
+                                </li> 
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/offices">Sucursales</a>
-                                </li>
+                                </li>--}}
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/employees">Empleados</a>
                                 </li>

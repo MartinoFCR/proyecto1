@@ -36,15 +36,15 @@
                     
                     <div class="dropdown__content">
                         <ul class="dropdown__sub">
-                            {{-- <li class="dropdown__li">
+                            {{--<li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
                             </li>
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/categories">Categorias de prendas</a>
-                            </li> --}}
+                            </li>
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/offices">Sucursales</a>
-                            </li>
+                            </li> --}}
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/employees">Empleados</a>
                             </li>
