@@ -413,8 +413,29 @@ body {
     display: flex;
     flex-direction: row;
 }
+/*TABLA DE PROVEEDORES*/
+.supplier-id{
+    width: 10%;
+    text-align: center;
+    padding: 0;
+}
+.supplier-name{
+    width: 25%;
+}
+.supplier-phone,
+.supplier-city{
+    width: 15%;
+    text-align: center;
+}
 
-
+.supplier-email{
+    width: 25%;
+}
+.supplier-buttoms{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
 
 /*FORMS*/
 .form__group {

@@ -182,33 +182,34 @@
                     @endif
 
                     <div class="content__data">
-                        <table class="table table-ligth">
-                            <thead>
+                        <table class="products__table">
+                            <thead class="table__th">
                                 <tr>
-                                    <th>Id Proveedor</th>
-                                    <th>Nombre Proveedor</th>
-                                    <th>Ciudad</th>
-                                    <th>Telefono</th>
-                                    <th>Correo</th>
-                                    <th>Acciones</th>
+                                    <th class="th__title">Id Proveedor</th>
+                                    <th class="th__title">Nombre Proveedor</th>
+                                    <th class="th__title">Ciudad</th>
+                                    <th class="th__title">Telefono</th>
+                                    <th class="th__title">Correo</th>
+                                    <th class="th__title">Acciones</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="table__td">
                                 @foreach($suppliers as $supplier)
                                 <tr>
-                                    <td>{{ $supplier->supplier_id }}</td>
-                                    <td>{{ $supplier->name_supplier }}</td>
-                                    <td>{{ $supplier->city_supplier }}</td>
-                                    <td>{{ $supplier->phone }}</td>
-                                    <td>{{ $supplier->email }}</td>
-                                    <td>
+                                    <td class="td__data supplier-id">{{ $supplier->supplier_id }}</td>
+                                    <td class="td__data supplier-name">{{ $supplier->name_supplier }}</td>
+                                    <td class="td__data supplier-email">{{ $supplier->email }}</td>
+                                    <td class="td__data supplier-city">{{ $supplier->city_supplier }}</td>
+                                    <td class="td__data supplier-phone">{{ $supplier->phone }}</td>
+                                    <td class="td__data supplier-buttoms">
                                         <a href="{{ url('/suppliers/'.$supplier->supplier_id.'/edit') }}">
-                                            Editar
+                                            <i class="fa-solid fa-pen-to-square"></i>
                                         </a>
                                         <form action="{{ url('/suppliers/'.$supplier->supplier_id) }}" class="d-inline" method="post">
                                             @csrf
                                             {{ method_field('DELETE') }}
-                                            <input type="submit" onclick="return confirm('¿Deseas eliminar este proveedor?')" class="table__button" value="Borrar">
+                                            
+                                            <i class="delete__icon fa-solid fa-trash-can" onclick="return confirm('¿Deseas eliminar este proveedor?')"></i>
                                         </form>
                                     </td>
                                 </tr>
