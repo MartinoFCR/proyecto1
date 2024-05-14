@@ -18,7 +18,7 @@ class ProductsController extends Controller
     public function index()
     {
         //
-        $dataproducts['products'] = Products::paginate(15);
+        $dataproducts['products'] = Products::all();
         return view('menu/storages/products', $dataproducts);
     }
 
