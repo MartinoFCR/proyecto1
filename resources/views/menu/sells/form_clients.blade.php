@@ -1,6 +1,6 @@
 <a href="{{ url('clients') }}">
     <i class="return__icon fa-solid fa-left-long"></i>
-</a> 
+</a>
 <h1>{{ $modo }} cliente</h1>
 @if(count($errors)>0)
 <div class="alert alert-danger" role="alert">
@@ -43,4 +43,4 @@
     <label class="form__label" for="date">Fecha de Nacimiento</label>
 </div>
 <br>
-    <input class="form__buttom" type="submit" value="{{ $modo }} cliente">
+<input class="form__buttom" type="submit" value="{{ $modo }} cliente">
