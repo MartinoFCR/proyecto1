@@ -209,7 +209,7 @@
                                             @csrf
                                             {{ method_field('DELETE') }}
                                             
-                                            <i class="delete__icon fa-solid fa-trash-can" onclick="return confirm('¿Deseas eliminar este proveedor?')"></i>
+                                            <i class="delete__icon fa-solid fa-trash-can" onclick="return confirm('¿Deseas eliminar este proveedor?')" value="Borrar"></i>
                                         </form>
                                     </td>
                                 </tr>

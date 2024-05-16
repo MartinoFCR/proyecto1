@@ -8,6 +8,7 @@ use App\Http\Controllers\SuppliersController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\CustomersController;
 use App\Http\Controllers\BuysController;
+use App\Http\Controllers\EmployeeController;
 
 Route::get('/',                 [LoginController::class, 'login']);
 Route::get('/forget_password',  [LoginController::class, 'forget_password']);
@@ -16,7 +17,7 @@ Route::get('/home',             [HomeController::class, 'index']);
 Route::get('/config',           [HomeController::class, 'config']);
 Route::get('/categories',       [HomeController::class, 'categories']);
 Route::get('/offices',          [HomeController::class, 'offices']);
-Route::get('/employees',        [HomeController::class, 'employees']);
+Route::resource('employees', EmployeeController::class);
 Route::get('/user_profile',     [HomeController::class, 'user_profile']);
 Route::get('/users',            [HomeController::class, 'users']);
 

@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class employee extends Model
+class Browser extends Model
 {
     use HasFactory;
-    protected $primaryKey = 'employees_id';
+    public $timestamps = false;
 }
