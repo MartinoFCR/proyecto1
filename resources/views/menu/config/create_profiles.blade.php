@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home</title>
-<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/reset.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/styles.css') }}">
-<script src="https://kit.fontawesome.com/6dd0aa23c2.js" crossorigin="anonymous"></script>
-<!--<script src="https://cdn.tailwindcss.com"></script>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/reset.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/styles.css') }}">
+    <script src="https://kit.fontawesome.com/6dd0aa23c2.js" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
 </head>
+
 <body>
 
 
-<div class="layout">
+    <div class="layout">
 
-    <div class="layout__left">
-        <div class="left__title">
-            <a href="/home">
-                <h1 class="title_menu">MENÚ</h1>
-            </a>
-        </div>
+        <div class="layout__left">
+            <div class="left__title">
+                <a href="/home">
+                    <h1 class="title_menu">MENÚ</h1>
+                </a>
+            </div>
 
         <div class="left__container">
 
@@ -41,7 +43,7 @@
                             </li>
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/categories">Categorias de prendas</a>
-                            </li>
+                            </li> 
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/offices">Sucursales</a>
                             </li> --}}
@@ -139,86 +141,45 @@
         </div>
     </div>
 
-    <div class="layout__right">
-        <div class="layout__header">
-            <div class="header__name">
-                <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
-            </div>
-
-            <div class="header__content">
-                <div class="header__user">
-                    <div class="user__container-img">
-                        <img class="user__img" src="{{ asset('assets/img/user.jpg') }}" alt="Foto del Usuario">
-                    </div>
-
-                    <h6 class="user__name">Usuario</h6>
+        <div class="layout__right">
+            <div class="layout__header">
+                <div class="header__name">
+                    <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
                 </div>
 
-                <div class="header__log-out">
-                    <a href="#" class="log-out__link">
-                        <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
-                    </a>
-                    <h6 class="log-out__name">Cerrar Sesion</h6>
-                </div>
-            </div>
-        </div>
-
-        <div class="layout__content">
-
-            <h3 class="content__info">Bienvenido</h3>
-
-            <div class="center-content">
-            <div class="content__inputs">
-                        <div class="inputs__group">
-                            <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
-                            <label class="inputs__label" for="">Buscar</label>
+                <div class="header__content">
+                    <div class="header__user">
+                        <div class="user__container-img">
+                            <img class="user__img" src="{{ asset('assets/img/user.jpg') }}" alt="Foto del Usuario">
                         </div>
-                        <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
-                        <a href="{{ url('user_profile/create') }}">
-                            <input type="submit" class="inputs__buttom" value="CREAR PERFIL">
-                        </a>
+
+                        <h6 class="user__name">Usuario</h6>
                     </div>
 
-                    <div class="content__data">
-                        @if(Session::has('mensaje'))
-                        {{ Session::get('mensaje') }}
-                        @endif
-                        <table class="products__table">
-                            <thead class="table__th">
-                                <tr>
-                                    <th class="th__title">Id Perfil</th>
-                                    <th class="th__title">Nombre</th>
-                                    <th class="th__title">Permisos</th>
-                                    <th class="th__title"></th>
-                                </tr>
-                            </thead>
-                            <tbody class="table__td">
-                                @foreach($user_profiles as $users_profile)
-                                <tr>
-                                    <td class="td__data clients-id">{{ $users_profile->profile_id }}</td>
-                                    <td class="td__data clients-name">{{ $users_profile->name_profile }}</td>
-                                    <td class="td__data clients-lastname">{{ $users_profile->premissions }}</td>
-                                    <td class="td__data clients-buttoms">
-                                        <a href="{{ url('user_profile/'.$users_profile->profile_id.'/edit') }}">
-                                            <i class="fa-solid fa-pen-to-square"></i>
-                                        </a>
-                                        <form action="{{ url('/user_profile/'.$users_profile->profile_id) }}" class="d-inline" method="post">
-                                            @csrf
-                                            {{ method_field('DELETE') }}
-                                            <i class="delete__icon fa-solid fa-trash-can" onclick="return confirm('¿Quieres Eliminar el Perfil de Usuario?')"></i>
-                                        </form>
-                                    </td>
-                                </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
+                    <div class="header__log-out">
+                        <a href="/" class="log-out__link">
+                            <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
+                        </a>
+                        <h6 class="log-out__name">Cerrar Sesion</h6>
                     </div>
+                </div>
+            </div>
+
+            <div class="layout__content">
+
+                <h3 class="content__info">Administraciòn / Perfil de Usuario</h3>
+                <div class="center-content">
+                    <div class="content__data">
+                        <form action="{{ url('/user_profile') }}" method="post">
+                            @csrf
+                            @include('menu/config/form_profile', ['modo' => 'Crear'])
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-
-
     </div>
-</div>
 
 </body>
+
 </html>
