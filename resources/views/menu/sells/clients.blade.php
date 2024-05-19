@@ -24,7 +24,23 @@
             </div>
         
             <div class="left__container">
+<<<<<<< HEAD
                 <ul class="dropdown" id="menu">
+=======
+                <nav></nav>
+
+
+                <ul class="dropdown" id="menu">
+                    <!--
+                <li>
+                    
+                    <div class="left__search-bar">
+                        <input type="text">
+                    </div>
+                    
+                </li>
+                -->
+>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
 
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
@@ -34,18 +50,32 @@
 
                             <input type="checkbox" class="dropdown__check">
                         </a>
+<<<<<<< HEAD
                         
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 {{-- <li class="dropdown__li">
+=======
+
+                        <div class="dropdown__content">
+                            <ul class="dropdown__sub">
+                                <li class="dropdown__li">
+>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                                     <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/categories">Categorias de prendas</a>
+<<<<<<< HEAD
                                 </li> 
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/offices">Sucursales</a>
                                 </li> --}}
+=======
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/offices">Sucursales</a>
+                                </li>
+>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/employees">Empleados</a>
                                 </li>
@@ -67,18 +97,30 @@
 
                             <input type="checkbox" class="dropdown__check">
                         </a>
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/bills">Factura</a>
                                 </li>
                                 <li class="dropdown__li">
+<<<<<<< HEAD
                                     <a class="dropdown__anchor" href="/clients">Clientes</a>
                                 </li>
                                 {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/quotes">Cotizacion</a>
                                 </li> --}}
+=======
+                                    <a class="dropdown__anchor" href="{{ url('clients') }}">Clientes</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/quotes">Cotizacion</a>
+                                </li>
+>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                             </ul>
                         </div>
                     </li>
@@ -95,14 +137,24 @@
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
+<<<<<<< HEAD
                                     <a class="dropdown__anchor" href="/suppliers">Proveedores</a>
+=======
+                                    <a class="dropdown__anchor" href="{{ url('suppliers') }}">Proveedores</a>
+>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/buys">Compras</a>
                                 </li>
+<<<<<<< HEAD
                                 {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
                                 </li> --}}
+=======
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
+                                </li>
+>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                             </ul>
                         </div>
                     </li>
@@ -121,6 +173,7 @@
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/storages">Almacenes</a>
                                 </li>
+<<<<<<< HEAD
                                 {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/kardex">Kardex</a>
                                 </li> --}}
@@ -132,6 +185,19 @@
                                 </li> --}}
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/products">Articulos</a>
+=======
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/kardex">Kardex</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/transfers">Traslados</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="{{ url('products') }}">Articulos</a>
+>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                                 </li>
                             </ul>
                         </div>
@@ -168,8 +234,6 @@
                 <h3 class="content__info">Ventas / Cliente</h3>
 
                 <div class="center-content">
-                    <!-- AQUI EMPIEZA LO QUE CAMBIA EN CADA VISTA-->
-
                     <div class="content__inputs">
                         <div class="inputs__group">
                             <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
@@ -177,7 +241,7 @@
                         </div>
                         <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
                         <a href="{{ url('clients/create') }}">
-                            <input type="submit" class="inputs__buttom" value="+ CREAR CLIENTE">
+                            <input type="submit" class="inputs__buttom" value="CREAR CLIENTE">
                         </a>
                     </div>
 
@@ -222,10 +286,21 @@
                         </table>
                     </div>
                 </div>
+
+
             </div>
         </div>
-    </div>
 
+<<<<<<< HEAD
+=======
+        <div class="footer">
+            <div class="footer__info">
+                <h3 class="info__text">Pie de página</h3>
+            </div>
+        </div>
+
+
+>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
 </body>
 
 </html>
