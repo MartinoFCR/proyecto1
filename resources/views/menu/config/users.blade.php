@@ -33,7 +33,7 @@
 
                         <input type="checkbox" class="dropdown__check">
                     </a>
-                    
+
                     <div class="dropdown__content">
                         <ul class="dropdown__sub">
                             {{-- <li class="dropdown__li">
@@ -41,7 +41,7 @@
                             </li>
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/categories">Categorias de prendas</a>
-                            </li> 
+                            </li>
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/offices">Sucursales</a>
                             </li> --}}
@@ -66,7 +66,7 @@
 
                         <input type="checkbox" class="dropdown__check">
                     </a>
-                    
+
                     <div class="dropdown__content">
                         <ul class="dropdown__sub">
                             <li class="dropdown__li">
@@ -167,6 +167,60 @@
             <h3 class="content__info">Bienvenido</h3>
 
             <div class="center-content">
+                <div class="center-content">
+                    <div class="content__inputs">
+                        <div class="inputs__group">
+                            <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
+                            <label class="inputs__label" for="">Buscar</label>
+                        </div>
+                        <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
+                        <a href="{{ url('employees/create') }}">
+                            <input type="submit" class="inputs__buttom" value="CREAR EMPLEADO">
+                        </a>
+                    </div>
+
+                    <div class="content__data">
+                        @if(Session::has('mensaje'))
+                        {{ Session::get('mensaje') }}
+                        @endif
+                        <table class="products__table">
+                            <thead class="table__th">
+                                <tr>
+                                    <th class="th__title">Cedula</th>
+                                    <th class="th__title">Nombre</th>
+                                    <th class="th__title">Apellidos</th>
+                                    <th class="th__title">Telefono</th>
+                                    <th class="th__title">Ciudad</th>
+                                    <th class="th__title">Fecha de nacimiento</th>
+                                    <th class="th__title">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table__td">
+                                @foreach($customers as $customer)
+                                <tr>
+                                    <td class="td__data clients-id">{{ $customer->id }}</td>
+                                    <td class="td__data clients-name">{{ $customer->name_customer }}</td>
+                                    <td class="td__data clients-lastname">{{ $customer->lastname_customer }}</td>
+                                    <td class="td__data clients-phone">{{ $customer->phone}}</td>
+                                    <td class="td__data clients-city">{{ $customer->city}}</td>
+                                    <td class="td__data clients-date">{{ $customer->date }}</td>
+
+                                    <td class="td__data clients-buttoms">
+                                        <a href="{{ url('users/'.$customer->id.'/edit') }}">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                        <form action="{{ url('/users/'.$customer->id) }}" class="d-inline" method="post">
+                                            @csrf
+                                            {{ method_field('DELETE') }}
+                                            <i class="delete__icon fa-solid fa-trash-can" onclick="return confirm('¿Quieres Eliminar el producto?')"></i>
+                                        </form>
+                                    </td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
 
