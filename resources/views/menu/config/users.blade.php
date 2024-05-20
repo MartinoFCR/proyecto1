@@ -207,10 +207,10 @@
 
 
                                             <td class="td__data clients-buttoms">
-                                                <a href="{{ url('users/' . $user->user_id . '/edit') }}">
+                                                <a href="{{ url('users/'.$user->user_id.'/edit') }}">
                                                     <i class="fa-solid fa-pen-to-square"></i>
                                                 </a>
-                                                <form action="{{ url('/users/' . $user->user_id) }}" class="d-inline"
+                                                <form action="{{ url('/users/'.$user->user_id) }}" class="d-inline"
                                                     method="post">
                                                     @csrf
                                                     {{ method_field('DELETE') }}

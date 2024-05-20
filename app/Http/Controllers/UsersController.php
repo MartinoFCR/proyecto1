@@ -90,7 +90,7 @@ class UsersController extends Controller
         }
         $datauser = request()->except(['_token','_method']);
         User::where('user_id','=',$user_id)->update($datauser);
-        $employee = User::findOrFail($user_id);
+        $user = User::findOrFail($user_id);
         return redirect('users')->with('mensaje', 'Usuario modificado con éxito');
     }
 
