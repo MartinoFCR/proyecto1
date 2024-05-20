@@ -22,7 +22,7 @@ class buys extends Model
     }
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(Users::class);
     }
     public function buys_orders()
     {

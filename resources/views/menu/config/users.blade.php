@@ -177,8 +177,8 @@
                                 <label class="inputs__label" for="">Buscar</label>
                             </div>
                             <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
-                            <a href="{{ url('employees/create') }}">
-                                <input type="submit" class="inputs__buttom" value="CREAR EMPLEADO">
+                            <a href="{{ url('users/create') }}">
+                                <input type="submit" class="inputs__buttom" value="CREAR USUARIO">
                             </a>
                         </div>
 
@@ -210,7 +210,7 @@
                                                 <a href="{{ url('users/'.$user->user_id.'/edit') }}">
                                                     <i class="fa-solid fa-pen-to-square"></i>
                                                 </a>
-                                                <form action="{{ url('/users/'.$user->user_id) }}" class="d-inline"
+                                                <form action="{{ url('users/'.$user->user_id) }}" class="d-inline"
                                                     method="post">
                                                     @csrf
                                                     {{ method_field('DELETE') }}

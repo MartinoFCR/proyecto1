@@ -44,7 +44,7 @@ class EmployeeController extends Controller
         ], [
             'required' => 'El campo :attribute es obligatorio.',
         ]);
-    
+
         if ($validator->fails()) {
             return redirect()->back()
                 ->withErrors($validator)
@@ -88,7 +88,7 @@ class EmployeeController extends Controller
         ], [
             'required' => 'El campo :attribute es obligatorio.',
         ]);
-    
+
         if ($validator->fails()) {
             return redirect()->back()
                 ->withErrors($validator)
@@ -107,6 +107,7 @@ class EmployeeController extends Controller
     {
         //
         employee::destroy($employees_id);
+        
         return redirect('employees')->with('mensaje','Empleado borrado');
     }
 }

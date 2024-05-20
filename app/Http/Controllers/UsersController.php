@@ -33,7 +33,7 @@ class UsersController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'user_id' => 'required|string|max:100',
-            'poassword_user' => 'required|string|max:100',
+            'password_user' => 'required|string|max:100',
             'email' => 'required|string|max:100',
             'profile_id' =>'required|string|max:100',
 
@@ -47,7 +47,7 @@ class UsersController extends Controller
                 ->withInput();
         }
         $datauser = request()->except('_token');
-        User::insert($datauser);
+        Users::insert($datauser);
         return redirect('users')->with('mensaje','Empleado agregado con éxito');
     }
 
@@ -64,7 +64,7 @@ class UsersController extends Controller
      */
     public function edit($user_id)
     {
-        $users = User::findOrFail($user_id);
+        $users = Users::findOrFail($user_id);
         return view('menu/config/edit_user', compact('users'));
     }
 
@@ -89,17 +89,18 @@ class UsersController extends Controller
                 ->withInput();
         }
         $datauser = request()->except(['_token','_method']);
-        User::where('user_id','=',$user_id)->update($datauser);
-        $user = User::findOrFail($user_id);
+        Users::where('user_id','=',$user_id)->update($datauser);
+        $user = Users::findOrFail($user_id);
         return redirect('users')->with('mensaje', 'Usuario modificado con éxito');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $user_id)
+    public function destroy($user_id)
     {
-        User::destroy($user_id);
-        return redirect('users')->with('mensaje','Empleado borrado');
+        Users::destroy($user_id);
+        echo"$user_id";
+        return redirect('users')->with('mensaje','Usuario borrado');
     }
 }
