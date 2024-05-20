@@ -11,6 +11,7 @@ use App\Http\Controllers\BuysController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\UsersProfilesController;
 use App\Http\Controllers\StoreController;
+use App\Http\Controllers\TransfersController;
 
 Route::get('/',                 [LoginController::class, 'login']);
 Route::get('/forget_password',  [LoginController::class, 'forget_password']);
@@ -31,8 +32,8 @@ Route::get('/suppliers',        [HomeController::class, 'suppliers']);
 Route::get('/buys_orders',      [HomeController::class, 'buys_orders']);
 
 Route::resource('storages', StoreController::class);
+Route::resource('transfers', TransfersController::class);
 Route::get('/kardex',           [HomeController::class, 'kardex']);
-Route::get('/transfers',        [HomeController::class, 'transfers']);
 Route::get('/storage_config',   [HomeController::class, 'storage_config']);
 
 Route::resource('products', ProductsController::class);
