@@ -74,13 +74,13 @@
                             </ul>
                         </div>
                     </li>
-    
+
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-cart-shopping"></i>
                             <span class="dropdown__span">VENTAS</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-    
+
                             <input type="checkbox" class="dropdown__check">
                         </a>
 
@@ -101,7 +101,7 @@
                             </ul>
                         </div>
                     </li>
-    
+
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-cart-flatbed"></i>
@@ -110,7 +110,7 @@
     
                             <input type="checkbox" class="dropdown__check">
                         </a>
-    
+
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
@@ -125,19 +125,16 @@
                     <li class="dropdown__li">
                         <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
                     </li>
-<<<<<<< HEAD
 
-=======
-    
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-shop"></i>
                             <span class="dropdown__span">ALMACEN</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-    
+
                             <input type="checkbox" class="dropdown__check">
                         </a>
-    
+
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 {{-- <li class="dropdown__li">
