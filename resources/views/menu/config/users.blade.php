@@ -36,12 +36,12 @@
                     
                     <div class="dropdown__content">
                         <ul class="dropdown__sub">
-                            {{-- <li class="dropdown__li">
+                            {{--<li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
                             </li>
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/categories">Categorias de prendas</a>
-                            </li> 
+                            </li>
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/offices">Sucursales</a>
                             </li> --}}
@@ -117,16 +117,16 @@
 
                     <div class="dropdown__content">
                         <ul class="dropdown__sub">
-                            <li class="dropdown__li">
+                            {{-- <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/storages">Almacenes</a>
                             </li>
-                            {{-- <li class="dropdown__li">
+                            <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/kardex">Kardex</a>
-                            </li> --}}
+                            </li>
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/transfers">Traslados</a>
                             </li>
-                            {{-- <li class="dropdown__li">
+                            <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
                             </li> --}}
                             <li class="dropdown__li">
@@ -138,6 +138,7 @@
             </ul>
         </div>
     </div>
+
     <div class="layout__right">
         <div class="layout__header">
             <div class="header__name">
@@ -154,7 +155,7 @@
                 </div>
 
                 <div class="header__log-out">
-                    <a href="#" class="log-out__link">
+                    <a href="/" class="log-out__link">
                         <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
                     </a>
                     <h6 class="log-out__name">Cerrar Sesion</h6>
