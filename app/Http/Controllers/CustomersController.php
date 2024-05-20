@@ -14,7 +14,7 @@ class CustomersController extends Controller
     public function index()
     {
         //
-        $data['customers'] = customers::all(); 
+        $data['customers'] = customers::all();
         return view('menu/sells/clients', $data);
     }
 
@@ -43,7 +43,7 @@ class CustomersController extends Controller
         ], [
             'required' => 'El campo :attribute es obligatorio.',
         ]);
-    
+
         if ($validator->fails()) {
             return redirect()->back()
                 ->withErrors($validator)
@@ -88,7 +88,7 @@ class CustomersController extends Controller
         ], [
             'required' => 'El campo :attribute es obligatorio.',
         ]);
-    
+
         if ($validator->fails()) {
             return redirect()->back()
                 ->withErrors($validator)

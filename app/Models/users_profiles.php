@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class users_profiles extends Model
 {
     use HasFactory;
-    protected $primaryKey = 'profile_id';
+    
 }

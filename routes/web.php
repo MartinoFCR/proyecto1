@@ -9,6 +9,7 @@ use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\CustomersController;
 use App\Http\Controllers\BuysController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\UsersController;
 use App\Http\Controllers\UsersProfilesController;
 
 Route::get('/',                 [LoginController::class, 'login']);
@@ -18,9 +19,8 @@ Route::get('/home',             [HomeController::class, 'index']);
 Route::get('/config',           [HomeController::class, 'config']);
 Route::get('/categories',       [HomeController::class, 'categories']);
 Route::get('/offices',          [HomeController::class, 'offices']);
-Route::resource('employees', EmployeeController::class);
-Route::resource('user_profile', UsersProfilesController::class);
-Route::get('/users',            [HomeController::class, 'users']);
+
+
 
 Route::get('/bills',            [HomeController::class, 'bills']);
 Route::resource('clients', CustomersController::class);
@@ -34,9 +34,11 @@ Route::get('/kardex',           [HomeController::class, 'kardex']);
 Route::get('/transfers',        [HomeController::class, 'transfers']);
 Route::get('/storage_config',   [HomeController::class, 'storage_config']);
 
+Route::resource('employees', EmployeeController::class);
+Route::resource('user_profile', UsersProfilesController::class);
 Route::resource('products', ProductsController::class);
 Route::resource('suppliers', SuppliersController::class);
 Route::resource('buys', BuysController::class);
-
+Route::resource('users', UsersController::class);
 // routes/web.php
 Route::post('/procesar-formulario', [FormController::class, 'procesar_login'])->name('procesar-formulario');
