@@ -22,6 +22,7 @@
                     <h1 class="title_menu">MENÚ</h1>
                 </a>
             </div>
+<<<<<<< HEAD
 
 <<<<<<< HEAD
         <div class="left__container">
@@ -150,11 +151,19 @@
                 </li>
             </ul>
 =======
+=======
+    
+            <div class="left__container">
+    
+                <ul class="dropdown" id="menu">
+    
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-user-tie"></i>
                             <span class="dropdown__span">ADMINISTRACIÓN</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
+<<<<<<< HEAD
 
                             <input type="checkbox" class="dropdown__check">
                         </a>
@@ -162,6 +171,15 @@
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
+=======
+    
+                            <input type="checkbox" class="dropdown__check">
+                        </a>
+                        
+                        <div class="dropdown__content">
+                            <ul class="dropdown__sub">
+                                {{--<li class="dropdown__li">
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                                     <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
                                 </li>
                                 <li class="dropdown__li">
@@ -169,7 +187,11 @@
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/offices">Sucursales</a>
+<<<<<<< HEAD
                                 </li>
+=======
+                                </li> --}}
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/employees">Empleados</a>
                                 </li>
@@ -182,22 +204,34 @@
                             </ul>
                         </div>
                     </li>
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-cart-shopping"></i>
                             <span class="dropdown__span">VENTAS</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
+<<<<<<< HEAD
 
                             <input type="checkbox" class="dropdown__check">
                         </a>
 
+=======
+    
+                            <input type="checkbox" class="dropdown__check">
+                        </a>
+                        
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/bills">Factura</a>
                                 </li>
                                 <li class="dropdown__li">
+<<<<<<< HEAD
                                     <a class="dropdown__anchor" href="{{ url('clients') }}">Clientes</a>
                                 </li>
                                 <li class="dropdown__li">
@@ -207,11 +241,23 @@
                         </div>
                     </li>
 
+=======
+                                    <a class="dropdown__anchor" href="/clients">Clientes</a>
+                                </li>
+                                {{-- <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/quotes">Cotizacion</a>
+                                </li> --}}
+                            </ul>
+                        </div>
+                    </li>
+    
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-cart-flatbed"></i>
                             <span class="dropdown__span">COMPRAS</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
+<<<<<<< HEAD
 
                             <input type="checkbox" class="dropdown__check">
                         </a>
@@ -220,10 +266,21 @@
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="{{ url('suppliers') }}">Proveedores</a>
+=======
+    
+                            <input type="checkbox" class="dropdown__check">
+                        </a>
+    
+                        <div class="dropdown__content">
+                            <ul class="dropdown__sub">
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/suppliers">Proveedores</a>
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/buys">Compras</a>
                                 </li>
+<<<<<<< HEAD
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
                                 </li>
@@ -231,11 +288,21 @@
                         </div>
                     </li>
 
+=======
+                                {{-- <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
+                                </li> --}}
+                            </ul>
+                        </div>
+                    </li>
+    
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-shop"></i>
                             <span class="dropdown__span">ALMACEN</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
+<<<<<<< HEAD
 
                             <input type="checkbox" class="dropdown__check">
                         </a>
@@ -243,6 +310,15 @@
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
+=======
+    
+                            <input type="checkbox" class="dropdown__check">
+                        </a>
+    
+                        <div class="dropdown__content">
+                            <ul class="dropdown__sub">
+                                {{-- <li class="dropdown__li">
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                                     <a class="dropdown__anchor" href="/storages">Almacenes</a>
                                 </li>
                                 <li class="dropdown__li">
@@ -253,18 +329,27 @@
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
+<<<<<<< HEAD
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="{{ url('products') }}">Articulos</a>
+=======
+                                </li> --}}
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/products">Articulos</a>
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                                 </li>
                             </ul>
                         </div>
                     </li>
                 </ul>
             </div>
+<<<<<<< HEAD
 >>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+=======
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
         </div>
-    </div>
+
 
         <div class="layout__right">
             <div class="layout__header">

@@ -54,6 +54,7 @@
                         
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
+<<<<<<< HEAD
                                 {{-- <li class="dropdown__li">
 =======
 
@@ -64,10 +65,14 @@
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
 >>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+=======
+                                {{--<li class="dropdown__li">
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                                     <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/categories">Categorias de prendas</a>
+<<<<<<< HEAD
 <<<<<<< HEAD
                                 </li> 
                                 <li class="dropdown__li">
@@ -79,6 +84,12 @@
                                     <a class="dropdown__anchor" href="/offices">Sucursales</a>
                                 </li>
 >>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+=======
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/offices">Sucursales</a>
+                                </li> --}}
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/employees">Empleados</a>
                                 </li>
@@ -202,17 +213,21 @@
 >>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
-                                <li class="dropdown__li">
+                                {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/storages">Almacenes</a>
                                 </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 {{-- <li class="dropdown__li">
+=======
+                                <li class="dropdown__li">
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                                     <a class="dropdown__anchor" href="/kardex">Kardex</a>
-                                </li> --}}
+                                </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/transfers">Traslados</a>
                                 </li>
-                                {{-- <li class="dropdown__li">
+                                <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
                                 </li> --}}
                                 <li class="dropdown__li">

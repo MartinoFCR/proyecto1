@@ -19,8 +19,9 @@
                     <h1 class="title_menu">MENÚ</h1>
                 </a>
             </div>
-
+    
             <div class="left__container">
+<<<<<<< HEAD
 <<<<<<< HEAD
 
                 <ul class="dropdown" id="menu">
@@ -41,18 +42,24 @@
                 -->
 
 >>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+=======
+    
+                <ul class="dropdown" id="menu">
+    
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-user-tie"></i>
                             <span class="dropdown__span">ADMINISTRACIÓN</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-
+    
                             <input type="checkbox" class="dropdown__check">
                         </a>
 <<<<<<< HEAD
                         
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
+<<<<<<< HEAD
                                 {{-- <li class="dropdown__li">
 =======
 
@@ -60,6 +67,9 @@
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
 >>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+=======
+                                {{--<li class="dropdown__li">
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                                     <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
                                 </li>
                                 <li class="dropdown__li">
@@ -84,13 +94,13 @@
                             </ul>
                         </div>
                     </li>
-
+    
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-cart-shopping"></i>
                             <span class="dropdown__span">VENTAS</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-
+    
                             <input type="checkbox" class="dropdown__check">
                         </a>
 <<<<<<< HEAD
@@ -120,16 +130,16 @@
                             </ul>
                         </div>
                     </li>
-
+    
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-cart-flatbed"></i>
                             <span class="dropdown__span">COMPRAS</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-
+    
                             <input type="checkbox" class="dropdown__check">
                         </a>
-
+    
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
@@ -154,29 +164,33 @@
                             </ul>
                         </div>
                     </li>
-
+    
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-shop"></i>
                             <span class="dropdown__span">ALMACEN</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-
+    
                             <input type="checkbox" class="dropdown__check">
                         </a>
-
+    
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
-                                <li class="dropdown__li">
+                                {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/storages">Almacenes</a>
                                 </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 {{-- <li class="dropdown__li">
+=======
+                                <li class="dropdown__li">
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                                     <a class="dropdown__anchor" href="/kardex">Kardex</a>
-                                </li> --}}
+                                </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/transfers">Traslados</a>
                                 </li>
-                                {{-- <li class="dropdown__li">
+                                <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
                                 </li> --}}
                                 <li class="dropdown__li">

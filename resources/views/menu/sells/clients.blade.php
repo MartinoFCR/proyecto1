@@ -22,27 +22,39 @@
                     <h1 class="title_menu">MENÚ</h1>
                 </a>
             </div>
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
             <div class="left__container">
+    
                 <ul class="dropdown" id="menu">
-
+    
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-user-tie"></i>
                             <span class="dropdown__span">ADMINISTRACIÓN</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-
+    
                             <input type="checkbox" class="dropdown__check">
                         </a>
 
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
+<<<<<<< HEAD
                                 <li class="dropdown__li">
+=======
+                                {{--<li class="dropdown__li">
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                                     <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/categories">Categorias de prendas</a>
+<<<<<<< HEAD
 
+=======
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/offices">Sucursales</a>
@@ -62,13 +74,13 @@
                             </ul>
                         </div>
                     </li>
-
+    
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-cart-shopping"></i>
                             <span class="dropdown__span">VENTAS</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-
+    
                             <input type="checkbox" class="dropdown__check">
                         </a>
 
@@ -89,16 +101,16 @@
                             </ul>
                         </div>
                     </li>
-
+    
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-cart-flatbed"></i>
                             <span class="dropdown__span">COMPRAS</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-
+    
                             <input type="checkbox" class="dropdown__check">
                         </a>
-
+    
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
@@ -113,7 +125,40 @@
                     <li class="dropdown__li">
                         <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
                     </li>
+<<<<<<< HEAD
 
+=======
+    
+                    <li class="dropdown__list">
+                        <a class="dropdown__link" href="">
+                            <i class="dropdown__icon fa-solid fa-shop"></i>
+                            <span class="dropdown__span">ALMACEN</span>
+                            <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
+    
+                            <input type="checkbox" class="dropdown__check">
+                        </a>
+    
+                        <div class="dropdown__content">
+                            <ul class="dropdown__sub">
+                                {{-- <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/storages">Almacenes</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/kardex">Kardex</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/transfers">Traslados</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
+                                </li> --}}
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="/products">Articulos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                 </ul>
             </div>
             </li>
@@ -152,6 +197,7 @@
             </li>
             </ul>
         </div>
+<<<<<<< HEAD
         </li>
         </ul>
     </div>
@@ -160,6 +206,31 @@
         <div class="layout__header">
             <div class="header__name">
                 <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
+=======
+
+        <div class="layout__right">
+            <div class="layout__header">
+                <div class="header__name">
+                    <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
+                </div>
+
+                <div class="header__content">
+                    <div class="header__user">
+                        <div class="user__container-img">
+                            <img class="user__img" src="{{ asset('assets/img/user.jpg') }}" alt="Foto del Usuario">
+                        </div>
+
+                        <h6 class="user__name">Usuario</h6>
+                    </div>
+
+                    <div class="header__log-out">
+                        <a href="/" class="log-out__link">
+                            <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
+                        </a>
+                        <h6 class="log-out__name">Cerrar Sesion</h6>
+                    </div>
+                </div>
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
             </div>
 
             <div class="header__content">

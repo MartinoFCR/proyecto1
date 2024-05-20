@@ -33,12 +33,12 @@
                             <span class="dropdown__span">ADMINISTRACIÓN</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
 
-                            <input type="checkbox" class="dropdown__check">
-                        </a>
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
 
-                        <div class="dropdown__content">
-                            <ul class="dropdown__sub">
-                                {{-- <li class="dropdown__li">
+                    <div class="dropdown__content">
+                        <ul class="dropdown__sub">
+                            {{--<li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
                             </li>
                             <li class="dropdown__li">
@@ -117,34 +117,35 @@
                             <input type="checkbox" class="dropdown__check">
                         </a>
 
-                        <div class="dropdown__content">
-                            <ul class="dropdown__sub">
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/storages">Almacenes</a>
-                                </li>
-                                {{-- <li class="dropdown__li">
+                    <div class="dropdown__content">
+                        <ul class="dropdown__sub">
+                            {{-- <li class="dropdown__li">
+                                <a class="dropdown__anchor" href="/storages">Almacenes</a>
+                            </li>
+                            <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/kardex">Kardex</a>
-                            </li> --}}
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/transfers">Traslados</a>
-                                </li>
-                                {{-- <li class="dropdown__li">
+                            </li>
+                            <li class="dropdown__li">
+                                <a class="dropdown__anchor" href="/transfers">Traslados</a>
+                            </li>
+                            <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
                             </li> --}}
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/products">Articulos</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                            <li class="dropdown__li">
+                                <a class="dropdown__anchor" href="/products">Articulos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="layout__right">
-            <div class="layout__header">
-                <div class="header__name">
-                    <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
-                </div>
+    </div>
+
+    <div class="layout__right">
+        <div class="layout__header">
+            <div class="header__name">
+                <h1 class="header__title">ESTAMPADOS PERSONALIZADOS</h1>
+            </div>
 
                 <div class="header__content">
                     <div class="header__user">
@@ -155,14 +156,14 @@
                         <h6 class="user__name">Usuario</h6>
                     </div>
 
-                    <div class="header__log-out">
-                        <a href="#" class="log-out__link">
-                            <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
-                        </a>
-                        <h6 class="log-out__name">Cerrar Sesion</h6>
-                    </div>
+                <div class="header__log-out">
+                    <a href="/" class="log-out__link">
+                        <i class="log-out__icon fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                    <h6 class="log-out__name">Cerrar Sesion</h6>
                 </div>
             </div>
+        </div>
 
             <div class="layout__content">
 
