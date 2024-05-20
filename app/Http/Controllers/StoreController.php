@@ -14,7 +14,7 @@ class StoreController extends Controller
     public function index()
     {
         //
-        $dataStore['store'] = store::all();
+        $dataStore['stores'] = store::all();
         return view('menu/storages/storages', $dataStore);
     }
 

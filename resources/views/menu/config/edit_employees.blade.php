@@ -170,7 +170,7 @@
                 <h3 class="content__info">Ventas / Cliente</h3>
                 <div class="center-content">
                     <div class="content__data">
-                        <form action="{{ url('/employees/'.$employees->id) }}" method="post">
+                        <form action="{{ url('/employees/'.$employees->employees_id) }}" method="post">
                             @csrf
                             {{ method_field('PATCH') }}
                             @include('menu/config/form_employees', ['modo' => 'Editar'])
