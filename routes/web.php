@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
@@ -9,8 +10,10 @@ use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\CustomersController;
 use App\Http\Controllers\BuysController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\SaleController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\UsersProfilesController;
+
 
 Route::get('/',                 [LoginController::class, 'login']);
 Route::get('/forget_password',  [LoginController::class, 'forget_password']);
@@ -22,7 +25,7 @@ Route::get('/offices',          [HomeController::class, 'offices']);
 
 
 
-Route::get('/bills',            [HomeController::class, 'bills']);
+
 Route::resource('clients', CustomersController::class);
 Route::get('/quotes',           [HomeController::class, 'quotes']);
 
@@ -40,5 +43,7 @@ Route::resource('products', ProductsController::class);
 Route::resource('suppliers', SuppliersController::class);
 Route::resource('buys', BuysController::class);
 Route::resource('users', UsersController::class);
+Route::resource('sale', SaleController::class);
+
 // routes/web.php
 Route::post('/procesar-formulario', [FormController::class, 'procesar_login'])->name('procesar-formulario');
