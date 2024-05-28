@@ -21,9 +21,32 @@
             </div>
 
             <div class="left__container">
+<<<<<<< HEAD
+<<<<<<< HEAD
 
                 <ul class="dropdown" id="menu">
 
+=======
+                <nav></nav>
+
+
+                <ul class="dropdown" id="menu">
+                    <!--
+                <li>
+
+                    <div class="left__search-bar">
+                        <input type="text">
+                    </div>
+
+                </li>
+                -->
+
+>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+=======
+
+                <ul class="dropdown" id="menu">
+
+>>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-user-tie"></i>
@@ -32,6 +55,8 @@
 
                             <input type="checkbox" class="dropdown__check">
                         </a>
+<<<<<<< HEAD
+
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
 
@@ -56,6 +81,11 @@
 
                             <input type="checkbox" class="dropdown__check">
                         </a>
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
@@ -190,28 +220,25 @@
                                 </tr>
                             </thead>
                             <tbody class="table__td">
-                                @foreach ($suppliers as $supplier)
-                                    <tr>
-                                        <td class="td__data supplier-id">{{ $supplier->supplier_id }}</td>
-                                        <td class="td__data supplier-name">{{ $supplier->name_supplier }}</td>
-                                        <td class="td__data supplier-email">{{ $supplier->email }}</td>
-                                        <td class="td__data supplier-city">{{ $supplier->city_supplier }}</td>
-                                        <td class="td__data supplier-phone">{{ $supplier->phone }}</td>
-                                        <td class="td__data supplier-buttoms">
-                                            <a href="{{ url('/suppliers/' . $supplier->supplier_id . '/edit') }}">
-                                                <i class="fa-solid fa-pen-to-square"></i>
-                                            </a>
-                                            <form action="{{ url('/suppliers/' . $supplier->supplier_id) }}"
-                                                class="d-inline" method="post">
-                                                @csrf
-                                                {{ method_field('DELETE') }}
+                                @foreach($suppliers as $supplier)
+                                <tr>
+                                    <td class="td__data supplier-id">{{ $supplier->supplier_id }}</td>
+                                    <td class="td__data supplier-name">{{ $supplier->name_supplier }}</td>
+                                    <td class="td__data supplier-email">{{ $supplier->email }}</td>
+                                    <td class="td__data supplier-city">{{ $supplier->city_supplier }}</td>
+                                    <td class="td__data supplier-phone">{{ $supplier->phone }}</td>
+                                    <td class="td__data supplier-buttoms">
+                                        <a href="{{ url('/suppliers/'.$supplier->supplier_id.'/edit') }}">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                        <form action="{{ url('/suppliers/'.$supplier->supplier_id) }}" class="d-inline" method="post">
+                                            @csrf
+                                            {{ method_field('DELETE') }}
 
-                                                <i class="delete__icon fa-solid fa-trash-can"
-                                                    onclick="return confirm('¿Deseas eliminar este proveedor?')"
-                                                    value="Borrar"></i>
-                                            </form>
-                                        </td>
-                                    </tr>
+                                            <i class="delete__icon fa-solid fa-trash-can" onclick="return confirm('¿Deseas eliminar este proveedor?')" value="Borrar"></i>
+                                        </form>
+                                    </td>
+                                </tr>
                                 @endforeach
                             </tbody>
                         </table>
@@ -221,7 +248,18 @@
 
             </div>
         </div>
+<<<<<<< HEAD
+    </div>
+=======
 
+        <div class="footer">
+            <div class="footer__info">
+                <h3 class="info__text">Pie de página</h3>
+            </div>
+        </div>
+
+
+>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
 </body>
 
 </html>
