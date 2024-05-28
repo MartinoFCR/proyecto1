@@ -19,69 +19,22 @@
                     <h1 class="title_menu">MENÚ</h1>
                 </a>
             </div>
-    
+
             <div class="left__container">
-<<<<<<< HEAD
-<<<<<<< HEAD
 
                 <ul class="dropdown" id="menu">
 
-=======
-                <nav></nav>
-
-
-                <ul class="dropdown" id="menu">
-                    <!--
-                <li>
-                    
-                    <div class="left__search-bar">
-                        <input type="text">
-                    </div>
-                    
-                </li>
-                -->
-
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
-=======
-    
-                <ul class="dropdown" id="menu">
-    
->>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-user-tie"></i>
                             <span class="dropdown__span">ADMINISTRACIÓN</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-    
+
                             <input type="checkbox" class="dropdown__check">
                         </a>
-<<<<<<< HEAD
-                        
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
-<<<<<<< HEAD
-                                {{-- <li class="dropdown__li">
-=======
 
-                        <div class="dropdown__content">
-                            <ul class="dropdown__sub">
-                                <li class="dropdown__li">
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
-=======
-                                {{--<li class="dropdown__li">
->>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
-                                    <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/categories">Categorias de prendas</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/offices">Sucursales</a>
-<<<<<<< HEAD
-                                </li> --}}
-=======
-                                </li>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/employees">Empleados</a>
                                 </li>
@@ -94,86 +47,64 @@
                             </ul>
                         </div>
                     </li>
-    
+
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-cart-shopping"></i>
                             <span class="dropdown__span">VENTAS</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-    
+
                             <input type="checkbox" class="dropdown__check">
                         </a>
-<<<<<<< HEAD
-                        
-=======
-
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/bills">Factura</a>
                                 </li>
                                 <li class="dropdown__li">
-<<<<<<< HEAD
                                     <a class="dropdown__anchor" href="/clients">Clientes</a>
                                 </li>
                                 {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/quotes">Cotizacion</a>
                                 </li> --}}
-=======
-                                    <a class="dropdown__anchor" href="{{ url('clients') }}">Clientes</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/quotes">Cotizacion</a>
-                                </li>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                             </ul>
                         </div>
                     </li>
-    
+
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-cart-flatbed"></i>
                             <span class="dropdown__span">COMPRAS</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-    
+
                             <input type="checkbox" class="dropdown__check">
                         </a>
-    
+
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
-<<<<<<< HEAD
                                     <a class="dropdown__anchor" href="/suppliers">Proveedores</a>
-=======
-                                    <a class="dropdown__anchor" href="{{ url('suppliers') }}">Proveedores</a>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/buys">Compras</a>
                                 </li>
-<<<<<<< HEAD
                                 {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
                                 </li> --}}
-=======
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
-                                </li>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                             </ul>
                         </div>
                     </li>
-    
+
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-shop"></i>
                             <span class="dropdown__span">ALMACEN</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-    
+
                             <input type="checkbox" class="dropdown__check">
                         </a>
-    
+
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 {{-- <li class="dropdown__li">
@@ -195,19 +126,6 @@
                                 </li> --}}
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/products">Articulos</a>
-=======
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/kardex">Kardex</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/transfers">Traslados</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="{{ url('products') }}">Articulos</a>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                                 </li>
                             </ul>
                         </div>
@@ -255,8 +173,8 @@
                         </a>
                     </div>
 
-                    @if(Session::has('mensaje'))
-                    {{ Session::get('mensaje') }}
+                    @if (Session::has('mensaje'))
+                        {{ Session::get('mensaje') }}
                     @endif
 
                     <div class="content__data">
@@ -272,25 +190,28 @@
                                 </tr>
                             </thead>
                             <tbody class="table__td">
-                                @foreach($suppliers as $supplier)
-                                <tr>
-                                    <td class="td__data supplier-id">{{ $supplier->supplier_id }}</td>
-                                    <td class="td__data supplier-name">{{ $supplier->name_supplier }}</td>
-                                    <td class="td__data supplier-email">{{ $supplier->email }}</td>
-                                    <td class="td__data supplier-city">{{ $supplier->city_supplier }}</td>
-                                    <td class="td__data supplier-phone">{{ $supplier->phone }}</td>
-                                    <td class="td__data supplier-buttoms">
-                                        <a href="{{ url('/suppliers/'.$supplier->supplier_id.'/edit') }}">
-                                            <i class="fa-solid fa-pen-to-square"></i>
-                                        </a>
-                                        <form action="{{ url('/suppliers/'.$supplier->supplier_id) }}" class="d-inline" method="post">
-                                            @csrf
-                                            {{ method_field('DELETE') }}
-                                            
-                                            <i class="delete__icon fa-solid fa-trash-can" onclick="return confirm('¿Deseas eliminar este proveedor?')" value="Borrar"></i>
-                                        </form>
-                                    </td>
-                                </tr>
+                                @foreach ($suppliers as $supplier)
+                                    <tr>
+                                        <td class="td__data supplier-id">{{ $supplier->supplier_id }}</td>
+                                        <td class="td__data supplier-name">{{ $supplier->name_supplier }}</td>
+                                        <td class="td__data supplier-email">{{ $supplier->email }}</td>
+                                        <td class="td__data supplier-city">{{ $supplier->city_supplier }}</td>
+                                        <td class="td__data supplier-phone">{{ $supplier->phone }}</td>
+                                        <td class="td__data supplier-buttoms">
+                                            <a href="{{ url('/suppliers/' . $supplier->supplier_id . '/edit') }}">
+                                                <i class="fa-solid fa-pen-to-square"></i>
+                                            </a>
+                                            <form action="{{ url('/suppliers/' . $supplier->supplier_id) }}"
+                                                class="d-inline" method="post">
+                                                @csrf
+                                                {{ method_field('DELETE') }}
+
+                                                <i class="delete__icon fa-solid fa-trash-can"
+                                                    onclick="return confirm('¿Deseas eliminar este proveedor?')"
+                                                    value="Borrar"></i>
+                                            </form>
+                                        </td>
+                                    </tr>
                                 @endforeach
                             </tbody>
                         </table>
@@ -300,17 +221,7 @@
 
             </div>
         </div>
-<<<<<<< HEAD
-    </div>
-=======
 
-        <div class="footer">
-            <div class="footer__info">
-                <h3 class="info__text">Pie de página</h3>
-            </div>
-        </div>
-
-
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
 </body>
+
 </html>

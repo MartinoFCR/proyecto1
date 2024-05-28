@@ -37,7 +37,7 @@
 
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
-                                {{--<li class="dropdown__li">
+                                {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
                                 </li>
                                 <li class="dropdown__li">
@@ -71,7 +71,7 @@
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/bills">Factura</a>
+                                    <a class="dropdown__anchor" href="/sale">Factura</a>
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="{{ url('clients') }}">Clientes</a>
@@ -103,15 +103,10 @@
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/buys">Compras</a>
                                 </li>
-<<<<<<< HEAD
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
-                                </li>
-=======
+
                                 {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
                                 </li> --}}
->>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                             </ul>
                         </div>
                     </li>
@@ -136,15 +131,11 @@
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/transfers">Traslados</a>
                                 </li>
-<<<<<<< HEAD
-=======
+
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
                                 </li> --}}
->>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
-                                </li>
+
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="{{ url('products') }}">Articulos</a>
                                 </li>
@@ -181,27 +172,22 @@
 
             <div class="layout__content">
 
-                <<h3 class="content__info">Almacen / Articulos</h3>
+                <h3 class="content__info">Almacen / Articulos</h3>
 
-                    <div class="center-content">
-                        <div class="content__inputs">
-                            <div class="inputs__group">
-                                <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
-                                <label class="inputs__label" for="">Buscar</label>
-                            </div>
-
-                            <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
-                            <a href="{{ url('products/create') }}">
-                                <input type="submit" class="inputs__buttom" value="CREAR ARTICULO">
-                            </a>
-
+                <div class="center-content">
+                    <div class="content__inputs">
+                        <div class="inputs__group">
+                            <input class="inputs__input" type="text" placeholder="Buscar" autocomplete="off">
+                            <label class="inputs__label" for="">Buscar</label>
                         </div>
+
                         <button class="search__button"><i class=" fa-solid fa-magnifying-glass"></i></button>
                         <a href="{{ url('products/create') }}">
-                            <input type="submit" class="inputs__buttom" value="+ CREAR ARTICULO">
+                            <input type="submit" class="inputs__buttom" value="CREAR ARTICULO">
                         </a>
 
                     </div>
+
                     @if (Session::has('mensaje'))
                         <div class="alert-success">
                             {{ Session::get('mensaje') }}
