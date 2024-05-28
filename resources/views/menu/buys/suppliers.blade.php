@@ -59,29 +59,7 @@
 
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
-<<<<<<< HEAD
-                                {{-- <li class="dropdown__li">
-=======
 
-                        <div class="dropdown__content">
-                            <ul class="dropdown__sub">
-                                <li class="dropdown__li">
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
-=======
-                                {{--<li class="dropdown__li">
->>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
-                                    <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/categories">Categorias de prendas</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/offices">Sucursales</a>
-<<<<<<< HEAD
-                                </li> --}}
-=======
-                                </li>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/employees">Empleados</a>
                                 </li>
@@ -114,19 +92,11 @@
                                     <a class="dropdown__anchor" href="/sale">Factura</a>
                                 </li>
                                 <li class="dropdown__li">
-<<<<<<< HEAD
                                     <a class="dropdown__anchor" href="/clients">Clientes</a>
                                 </li>
                                 {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/quotes">Cotizacion</a>
                                 </li> --}}
-=======
-                                    <a class="dropdown__anchor" href="{{ url('clients') }}">Clientes</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/quotes">Cotizacion</a>
-                                </li>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                             </ul>
                         </div>
                     </li>
@@ -143,24 +113,15 @@
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
-<<<<<<< HEAD
                                     <a class="dropdown__anchor" href="/suppliers">Proveedores</a>
-=======
-                                    <a class="dropdown__anchor" href="{{ url('suppliers') }}">Proveedores</a>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/buys">Compras</a>
                                 </li>
-<<<<<<< HEAD
                                 {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
                                 </li> --}}
-=======
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
-                                </li>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                             </ul>
                         </div>
                     </li>
@@ -195,19 +156,6 @@
                                 </li> --}}
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/products">Articulos</a>
-=======
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/kardex">Kardex</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/transfers">Traslados</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="{{ url('products') }}">Articulos</a>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                                 </li>
                             </ul>
                         </div>
@@ -255,8 +203,8 @@
                         </a>
                     </div>
 
-                    @if(Session::has('mensaje'))
-                    {{ Session::get('mensaje') }}
+                    @if (Session::has('mensaje'))
+                        {{ Session::get('mensaje') }}
                     @endif
 
                     <div class="content__data">
@@ -287,8 +235,7 @@
                                             @csrf
                                             {{ method_field('DELETE') }}
 
-                                            <input type="submit" class="delete__icon fa-solid fa-trash-can"
-                                            onclick="return confirm('¿Deseas eliminar este proveedor?')" value="Borrar">
+                                            <i class="delete__icon fa-solid fa-trash-can" onclick="return confirm('¿Deseas eliminar este proveedor?')" value="Borrar"></i>
                                         </form>
                                     </td>
                                 </tr>
@@ -301,9 +248,9 @@
 
             </div>
         </div>
-
+<<<<<<< HEAD
     </div>
-
+=======
 
         <div class="footer">
             <div class="footer__info">
@@ -312,5 +259,7 @@
         </div>
 
 
+>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
 </body>
+
 </html>
