@@ -71,7 +71,7 @@
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/bills">Factura</a>
+                                    <a class="dropdown__anchor" href="/sale">Factura</a>
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="{{ url('clients') }}">Clientes</a>
@@ -103,15 +103,9 @@
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/buys">Compras</a>
                                 </li>
-<<<<<<< HEAD
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
                                 </li>
-=======
-                                {{-- <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
-                                </li> --}}
->>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                             </ul>
                         </div>
                     </li>
@@ -136,12 +130,6 @@
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/transfers">Traslados</a>
                                 </li>
-<<<<<<< HEAD
-=======
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
-                                </li> --}}
->>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
                                 </li>

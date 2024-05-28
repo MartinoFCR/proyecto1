@@ -72,7 +72,7 @@
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/bills">Factura</a>
+                                    <a class="dropdown__anchor" href="/sale">Factura</a>
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/clients">Clientes</a>
@@ -214,8 +214,8 @@
                                                     method="post">
                                                     @csrf
                                                     {{ method_field('DELETE') }}
-                                                    <i class="delete__icon fa-solid fa-trash-can"
-                                                        onclick="return confirm('¿Quieres Eliminar el producto?')"></i>
+                                                    <input type="submit" class="delete__icon fa-solid fa-trash-can"
+                                                        onclick="return confirm('¿Quieres Eliminar el producto?')" value="eliminar">
                                                 </form>
                                             </td>
                                         </tr>

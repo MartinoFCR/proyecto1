@@ -70,7 +70,8 @@
                     <div class="dropdown__content">
                         <ul class="dropdown__sub">
                             <li class="dropdown__li">
-                                <a class="dropdown__anchor" href="/bills">Factura</a>
+                                <a class="dropdown__anchor" href="/sale">Factura</a>
+
                             </li>
                             <li class="dropdown__li">
                                 <a class="dropdown__anchor" href="/clients">Clientes</a>
@@ -205,7 +206,7 @@
                                         <form action="{{ url('/user_profile/'.$users_profile->profile_id) }}" class="d-inline" method="post">
                                             @csrf
                                             {{ method_field('DELETE') }}
-                                            <i class="delete__icon fa-solid fa-trash-can" onclick="return confirm('¿Quieres Eliminar el Perfil de Usuario?')"></i>
+                                            <input type="submit" value="eliminar" class="delete__icon fa-solid fa-trash-can" onclick="return confirm('¿Quieres Eliminar el Perfil de Usuario?')">
                                         </form>
                                     </td>
                                 </tr>

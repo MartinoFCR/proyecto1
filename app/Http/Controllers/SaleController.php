@@ -104,7 +104,7 @@ class SaleController extends Controller
     public function destroy($id_sale)
     {
         try {
-            sale::destroy($id_sale);
+            Sale::destroy($id_sale);
         } catch (Throwable $th) {
             dd($th);
         }
