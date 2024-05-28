@@ -38,7 +38,7 @@
 
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
-                                {{--<li class="dropdown__li">
+                                {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
                                 </li>
                                 <li class="dropdown__li">
@@ -72,7 +72,7 @@
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/bills">Factura</a>
+                                    <a class="dropdown__anchor" href="/sale">Factura</a>
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/clients">Clientes</a>

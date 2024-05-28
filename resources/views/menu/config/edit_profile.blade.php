@@ -22,23 +22,23 @@
                     <h1 class="title_menu">MENÚ</h1>
                 </a>
             </div>
-    
+
             <div class="left__container">
-    
+
                 <ul class="dropdown" id="menu">
-    
+
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-user-tie"></i>
                             <span class="dropdown__span">ADMINISTRACIÓN</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-    
+
                             <input type="checkbox" class="dropdown__check">
                         </a>
-                        
+
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
-                                {{--<li class="dropdown__li">
+                                {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
                                 </li>
                                 <li class="dropdown__li">
@@ -59,20 +59,20 @@
                             </ul>
                         </div>
                     </li>
-    
+
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-cart-shopping"></i>
                             <span class="dropdown__span">VENTAS</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-    
+
                             <input type="checkbox" class="dropdown__check">
                         </a>
-                        
+
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/bills">Factura</a>
+                                    <a class="dropdown__anchor" href="/sale">Factura</a>
                                 </li>
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/clients">Clientes</a>
@@ -83,16 +83,16 @@
                             </ul>
                         </div>
                     </li>
-    
+
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-cart-flatbed"></i>
                             <span class="dropdown__span">COMPRAS</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-    
+
                             <input type="checkbox" class="dropdown__check">
                         </a>
-    
+
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
@@ -107,16 +107,16 @@
                             </ul>
                         </div>
                     </li>
-    
+
                     <li class="dropdown__list">
                         <a class="dropdown__link" href="">
                             <i class="dropdown__icon fa-solid fa-shop"></i>
                             <span class="dropdown__span">ALMACEN</span>
                             <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-    
+
                             <input type="checkbox" class="dropdown__check">
                         </a>
-    
+
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 {{-- <li class="dropdown__li">
@@ -170,7 +170,7 @@
                 <h3 class="content__info">Administraciòn / Perfil de Usuario</h3>
                 <div class="center-content">
                     <div class="content__data">
-                        <form action="{{ url('/user_profile/'.$users_profiles->profile_id) }}" method="post">
+                        <form action="{{ url('/user_profile/' . $users_profiles->profile_id) }}" method="post">
                             @csrf
                             {{ method_field('PATCH') }}
                             @include('menu/config/form_profile', ['modo' => 'Editar'])

@@ -12,44 +12,36 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-=======
+    <<<<<<< HEAD=======>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+        <div class="layout">
+            <div class="layout__left">
+                <div class="left__title">
+                    <a href="/home">
+                        <h1 class="title_menu">MENÚ</h1>
+                    </a>
+                </div>
 
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
-    <div class="layout">
-        <div class="layout__left">
-            <div class="left__title">
-                <a href="/home">
-                    <h1 class="title_menu">MENÚ</h1>
-                </a>
-            </div>
-    
-            <div class="left__container">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                <nav></nav>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+                <div class="left__container">
+                    <<<<<<< HEAD <<<<<<< HEAD=======<nav>
+                        </nav>
+                        >>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
 
-=======
-    
->>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
-                <ul class="dropdown" id="menu">
-    
-                    <li class="dropdown__list">
-                        <a class="dropdown__link" href="">
-                            <i class="dropdown__icon fa-solid fa-user-tie"></i>
-                            <span class="dropdown__span">ADMINISTRACIÓN</span>
-                            <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-    
-                            <input type="checkbox" class="dropdown__check">
-                        </a>
-<<<<<<< HEAD
-                        
-                        <div class="dropdown__content">
-                            <ul class="dropdown__sub">
-<<<<<<< HEAD
-                                {{-- <li class="dropdown__li">
+                        =======
+
+                        >>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
+                        <ul class="dropdown" id="menu">
+
+                            <li class="dropdown__list">
+                                <a class="dropdown__link" href="">
+                                    <i class="dropdown__icon fa-solid fa-user-tie"></i>
+                                    <span class="dropdown__span">ADMINISTRACIÓN</span>
+                                    <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
+
+                                    <input type="checkbox" class="dropdown__check">
+                                </a>
+                                <<<<<<< HEAD <div class="dropdown__content">
+                                    <ul class="dropdown__sub">
+                                        <<<<<<< HEAD {{-- <li class="dropdown__li">
 =======
 
                         <div class="dropdown__content">
@@ -57,7 +49,7 @@
                                 <li class="dropdown__li">
 >>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
 =======
-                                {{--<li class="dropdown__li">
+                                {{-- <li class="dropdown__li">
 >>>>>>> d460c9b06f49c0b4283be1ad9a945ee4044f5e91
                                     <a class="dropdown__anchor" href="/config">Ajuste de empresa</a>
                                 </li>
@@ -67,105 +59,94 @@
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/offices">Sucursales</a>
 <<<<<<< HEAD
-                                </li> --}}
-=======
-                                </li>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/employees">Empleados</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/user_profile">Perfiles de usuario</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/users">Usuarios</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-    
-                    <li class="dropdown__list">
-                        <a class="dropdown__link" href="">
-                            <i class="dropdown__icon fa-solid fa-cart-shopping"></i>
-                            <span class="dropdown__span">VENTAS</span>
-                            <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-    
-                            <input type="checkbox" class="dropdown__check">
-                        </a>
-<<<<<<< HEAD
-                        
-=======
+                                </li> --}}=======</li>
+                                            >>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+                                            <li class="dropdown__li">
+                                                <a class="dropdown__anchor" href="/employees">Empleados</a>
+                                            </li>
+                                            <li class="dropdown__li">
+                                                <a class="dropdown__anchor" href="/user_profile">Perfiles de usuario</a>
+                                            </li>
+                                            <li class="dropdown__li">
+                                                <a class="dropdown__anchor" href="/users">Usuarios</a>
+                                            </li>
+                                    </ul>
+                </div>
+                </li>
 
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+                <li class="dropdown__list">
+                    <a class="dropdown__link" href="">
+                        <i class="dropdown__icon fa-solid fa-cart-shopping"></i>
+                        <span class="dropdown__span">VENTAS</span>
+                        <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+                    <<<<<<< HEAD=======>>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                         <div class="dropdown__content">
                             <ul class="dropdown__sub">
                                 <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/bills">Factura</a>
+                                    <a class="dropdown__anchor" href="/sale">Factura</a>
                                 </li>
                                 <li class="dropdown__li">
-<<<<<<< HEAD
-                                    <a class="dropdown__anchor" href="/clients">Clientes</a>
+                                    <<<<<<< HEAD <a class="dropdown__anchor" href="/clients">Clientes</a>
                                 </li>
                                 {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/quotes">Cotizacion</a>
                                 </li> --}}
-=======
-                                    <a class="dropdown__anchor" href="{{ url('clients') }}">Clientes</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/quotes">Cotizacion</a>
-                                </li>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
-                            </ul>
-                        </div>
-                    </li>
-    
-                    <li class="dropdown__list">
-                        <a class="dropdown__link" href="">
-                            <i class="dropdown__icon fa-solid fa-cart-flatbed"></i>
-                            <span class="dropdown__span">COMPRAS</span>
-                            <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-    
-                            <input type="checkbox" class="dropdown__check">
-                        </a>
-    
-                        <div class="dropdown__content">
-                            <ul class="dropdown__sub">
-                                <li class="dropdown__li">
-<<<<<<< HEAD
-                                    <a class="dropdown__anchor" href="/suppliers">Proveedores</a>
-=======
-                                    <a class="dropdown__anchor" href="{{ url('suppliers') }}">Proveedores</a>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/buys">Compras</a>
-                                </li>
-<<<<<<< HEAD
-                                {{-- <li class="dropdown__li">
+                                =======
+                                <a class="dropdown__anchor" href="{{ url('clients') }}">Clientes</a>
+                </li>
+                <li class="dropdown__li">
+                    <a class="dropdown__anchor" href="/quotes">Cotizacion</a>
+                </li>
+                >>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+                </ul>
+            </div>
+            </li>
+
+            <li class="dropdown__list">
+                <a class="dropdown__link" href="">
+                    <i class="dropdown__icon fa-solid fa-cart-flatbed"></i>
+                    <span class="dropdown__span">COMPRAS</span>
+                    <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
+
+                    <input type="checkbox" class="dropdown__check">
+                </a>
+
+                <div class="dropdown__content">
+                    <ul class="dropdown__sub">
+                        <li class="dropdown__li">
+                            <<<<<<< HEAD <a class="dropdown__anchor" href="/suppliers">Proveedores</a>
+                                =======
+                                <a class="dropdown__anchor" href="{{ url('suppliers') }}">Proveedores</a>
+                                >>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+                        </li>
+                        <li class="dropdown__li">
+                            <a class="dropdown__anchor" href="/buys">Compras</a>
+                        </li>
+                        <<<<<<< HEAD {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
-                                </li> --}}
-=======
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
-                                </li>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
-                            </ul>
-                        </div>
-                    </li>
-    
-                    <li class="dropdown__list">
-                        <a class="dropdown__link" href="">
-                            <i class="dropdown__icon fa-solid fa-shop"></i>
-                            <span class="dropdown__span">ALMACEN</span>
-                            <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
-    
-                            <input type="checkbox" class="dropdown__check">
-                        </a>
-    
-                        <div class="dropdown__content">
-                            <ul class="dropdown__sub">
-                                {{-- <li class="dropdown__li">
+                                </li> --}}=======<li class="dropdown__li">
+                            <a class="dropdown__anchor" href="/buys_orders">Orden de compra</a>
+            </li>
+            >>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+            </ul>
+        </div>
+        </li>
+
+        <li class="dropdown__list">
+            <a class="dropdown__link" href="">
+                <i class="dropdown__icon fa-solid fa-shop"></i>
+                <span class="dropdown__span">ALMACEN</span>
+                <i class="dropdown__arrow fa-solid fa-chevron-down"></i>
+
+                <input type="checkbox" class="dropdown__check">
+            </a>
+
+            <div class="dropdown__content">
+                <ul class="dropdown__sub">
+                    {{-- <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/storages">Almacenes</a>
                                 </li>
 <<<<<<< HEAD
@@ -182,27 +163,27 @@
                                 <li class="dropdown__li">
                                     <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
                                 </li> --}}
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/products">Articulos</a>
-=======
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/kardex">Kardex</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/transfers">Traslados</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a class="dropdown__anchor" href="{{ url('products') }}">Articulos</a>
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
-                                </li>
-                            </ul>
-                        </div>
+                    <li class="dropdown__li">
+                        <a class="dropdown__anchor" href="/products">Articulos</a>
+                        =======
+                    <li class="dropdown__li">
+                        <a class="dropdown__anchor" href="/kardex">Kardex</a>
+                    </li>
+                    <li class="dropdown__li">
+                        <a class="dropdown__anchor" href="/transfers">Traslados</a>
+                    </li>
+                    <li class="dropdown__li">
+                        <a class="dropdown__anchor" href="/storage_config">Ajustes</a>
+                    </li>
+                    <li class="dropdown__li">
+                        <a class="dropdown__anchor" href="{{ url('products') }}">Articulos</a>
+                        >>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
                     </li>
                 </ul>
             </div>
+        </li>
+        </ul>
+        </div>
         </div>
 
         <div class="layout__right">
@@ -233,36 +214,35 @@
                 <h3 class="content__info">Compras / Proveedores</h3>
 
                 <div class="center-content">
-<<<<<<< HEAD
-                    <div class="content__data">
+                    <<<<<<< HEAD <div class="content__data">
                         <form action="{{ url('/suppliers') }}" method="post">
                             @csrf
-                            @include('menu/buys/form_suppliers', ['modo'=>'Crear'])
+                            @include('menu/buys/form_suppliers', ['modo' => 'Crear'])
                         </form>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
-=======
-                    <form action="{{ url('/suppliers') }}" method="post">
-                        @csrf
-                        @include('menu/buys/form_suppliers', ['modo'=>'Crear'])
-                    </form>
-                </div>
+        </div>
+        </div>
+        =======
+        <form action="{{ url('/suppliers') }}" method="post">
+            @csrf
+            @include('menu/buys/form_suppliers', ['modo' => 'Crear'])
+        </form>
+        </div>
+        </div>
+
+        </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__info">
+                <h3 class="info__text">Pie de página</h3>
             </div>
-
         </div>
-    </div>
-
-    <div class="footer">
-        <div class="footer__info">
-            <h3 class="info__text">Pie de página</h3>
-        </div>
-    </div>
 
 
->>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
+        >>>>>>> 83f6fec6d9cc77be5dc238f9bd942e70ae75f8c9
 </body>
 
 </html>
